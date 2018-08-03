@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Title</title>
+
+    <meta name="description" content="Химчистка мебели">
+    <meta name="keywords" content="химчистка, мебель">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/theme.css">
+
+</head>
+<body>
+
+<div class="uk-offcanvas-content">
+    <div class="uk-child-width-1-1 uk-height-viewport uk-flex uk-flex-wrap uk-flex-wrap-between">
+        <div>
+            <header class=""></header>
+            
+            <div class="uk-position-relative">
+                <div class="uk-grid-collapse" uk-grid>
+                    <!--left sidebar-->
+                    <aside class="uk-width-medium"></aside>
+                    
+                    <!--main side-->
+                    <main class="uk-width-expand">
+                        <div class="uk-container">
+                            <div class="uk-flex-between" uk-grid>
+                                <div>
+                                    <h1>Мои объявления</h1>
+                                </div>
+                                <div>
+                                    <a href="#" class="uk-button" uk-toggle></a>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    
+                    <!--right sidebar-->
+                    <aside class="uk-width-medium"></aside>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="uk-section"></footer>
+    </div>
+
+
+    <div id="offcanvas-overlay" uk-offcanvas="mode: push; overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <div class="uk-card uk-flex uk-flex-center uk-margin-large-top">
+                <ul class="uk-nav">
+                    <li>
+                        <a href="index.html" class="uk-active"><span>Главная</span></a>
+                    </li>
+
+                    <li>
+                        <a href="services.html"><span>Услуги</span></a>
+                    </li>
+
+                    <li>
+                        <a href="prices.html"><span>Цены</span></a>
+                    </li>
+
+                    <li>
+                        <a href="about.html"><span>О нас</span></a>
+                    </li>
+
+                    <li>
+                        <a href="contacts.html"><span>Контакты и оплата</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="node_modules/uikit/src/js/uikit.js"></script>
+<script src="node_modules/uikit/src/js/icons.js"></script>
+
+</body>
+</html>
