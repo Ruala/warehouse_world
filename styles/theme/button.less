@@ -21,6 +21,14 @@
 @button-default-active-background:              @global-secondary-background;
 @button-default-active-color:                   @global-inverse-color;
 
+@button-warning-background:                      @global-warning-background;
+@button-warning-color:                           @global-inverse-color;
+@button-warning-hover-background:                darken(@button-danger-background, 5%);
+@button-warning-hover-color:                     @global-inverse-color;
+@button-warning-active-background:               darken(@button-danger-background, 10%);
+@button-warning-active-color:                    @global-inverse-color;
+
+
 @button-disabled-background:                    transparent;
 
 @button-text-color:                             @global-emphasis-color;
@@ -63,7 +71,10 @@
 // Style modifiers
 // ========================================================================
 
-.hook-button-default() { border: @button-border-width solid @button-default-border; }
+.hook-button-default() {
+    border: @button-border-width solid @button-default-border;
+    text-transform: none;
+}
 
 .hook-button-default-hover() { border-color: @button-default-hover-border; }
 
