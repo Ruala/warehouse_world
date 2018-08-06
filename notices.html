@@ -92,51 +92,52 @@
                                             <li>
                                                 <a class="tm-toggle uk-accordion-title" href="#">Объявления:</a>
                                                 <div class="uk-accordion-content">
-                                                    <div class="uk-child-width-auto uk-grid-small uk-flex-between" uk-grid>
-                                                <div>
-                                                    <div class="uk-button-group">
-                                                        <button class="uk-active uk-button uk-button-default"
-                                                                uk-filter-control>Все
-                                                        </button>
+                                                    <div class="uk-child-width-auto uk-grid-small uk-flex-between"
+                                                         uk-grid>
+                                                        <div>
+                                                            <div class="uk-button-group">
+                                                                <button class="uk-active uk-button uk-button-default"
+                                                                        uk-filter-control>Все
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="uk-button-group">
+                                                                <button class="uk-button uk-button-default"
+                                                                        uk-filter-control="filter: [data-search='looking_for']; group: data-search">
+                                                                    Ищу
+                                                                </button>
+                                                                <button class="uk-button uk-button-default"
+                                                                        uk-filter-control="filter: [data-search='propose']; group: data-search">
+                                                                    Предлагаю
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="uk-button-group">
+                                                                <button class="uk-button uk-button-default"
+                                                                        uk-filter-control="filter: [data-active='active']; group: data-active">
+                                                                    Активные
+                                                                </button>
+                                                                <button class="uk-button uk-button-default"
+                                                                        uk-filter-control="filter: [data-active='not_active']; group: data-active">
+                                                                    Неактивные
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="uk-button-group">
+                                                                <button class="uk-button uk-button-default"
+                                                                        uk-filter-control="filter: [data-brokers='without_brokers']; group: data-brokers">
+                                                                    Без брокеров
+                                                                </button>
+                                                                <button class="uk-button uk-button-default"
+                                                                        uk-filter-control="filter: [data-brokers='with_brokers']; group: data-brokers">
+                                                                    С брокерами
+                                                                </button>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div>
-                                                    <div class="uk-button-group">
-                                                        <button class="uk-button uk-button-default"
-                                                                uk-filter-control="filter: [data-search='looking_for']; group: data-search">
-                                                            Ищу
-                                                        </button>
-                                                        <button class="uk-button uk-button-default"
-                                                                uk-filter-control="filter: [data-search='propose']; group: data-search">
-                                                            Предлагаю
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div class="uk-button-group">
-                                                        <button class="uk-button uk-button-default"
-                                                                uk-filter-control="filter: [data-active='active']; group: data-active">
-                                                            Активные
-                                                        </button>
-                                                        <button class="uk-button uk-button-default"
-                                                                uk-filter-control="filter: [data-active='not_active']; group: data-active">
-                                                            Неактивные
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div class="uk-button-group">
-                                                        <button class="uk-button uk-button-default"
-                                                                uk-filter-control="filter: [data-brokers='without_brokers']; group: data-brokers">
-                                                            Без брокеров
-                                                        </button>
-                                                        <button class="uk-button uk-button-default"
-                                                                uk-filter-control="filter: [data-brokers='with_brokers']; group: data-brokers">
-                                                            С брокерами
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
                                                 </div>
                                             </li>
                                         </ul>
@@ -151,9 +152,9 @@
                                                                 <div class="uk-width-auto">
                                                                     <div class="uk-position-relative uk-border-rounded">
                                                                         <img src="http://via.placeholder.com/290x175" alt="" class="uk-border-rounded">
-                                                                        <div class="uk-position-top">
+                                                                        <div class="uk-position-small uk-position-top">
                                                                             <div class="uk-child-width-auto uk-flex uk-flex-middle uk-flex-between">
-                                                                                <div class="uk-badge uk-flex uk-flex-middle uk-padding-small uk-text-uppercase">
+                                                                                <div class="uk-badge uk-flex uk-flex-middle uk-text-uppercase">
                                                                                     <i class="far fa-check-circle uk-text-success uk-margin-small-right"></i>
                                                                                     <span>Проверено складо</span>
                                                                                 </div>
@@ -163,13 +164,266 @@
                                                                     </div>
                                                                 </div>
 
-                                                                <div></div>
+                                                                <div uk-margin>
+                                                                    <div class="uk-text-muted">№ 1059381432, размещено вчера в 11:45</div>
+                                                                    <div class="uk-text-large">Санкт-Петербург, ул. Кубинская, 45</div>
+                                                                    <div class="uk-flex uk-flex-middle">
+                                                                        <i class="fab fa-medium-m uk-margin-small-right uk-text-danger"></i>
+                                                                        <span class="uk-text-muted">Московская</span>
+                                                                    </div>
+                                                                    <ul class="tm-iconnav-secondary uk-iconnav uk-padding-remove">
+                                                                        <li><a href="#"><i class="fas fa-ruble-sign"></i></a></li>
+                                                                        <li><a href="#"><i class="fas fa-ruble-sign"></i></a></li>
+                                                                        <li><a href="#"><i class="fas fa-ruble-sign"></i></a></li>
+                                                                    </ul>
+                                                                    <div class="uk-child-width-expand uk-grid-small uk-flex-middle" uk-grid>
+                                                                        <div class="uk-width-auto">
+                                                                            <div class="uk-flex uk-flex-middle">
+                                                                                <i class="fas fa-eye uk-margin-small-right uk-text-muted"></i>
+                                                                                <span>338</span>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div>
+                                                                            <div class="uk-flex uk-flex-middle">
+                                                                                <div class="uk-margin-small-right uk-text-success">
+                                                                                    <i class="fas fa-star"></i>
+                                                                                    <i class="fas fa-star"></i>
+                                                                                    <i class="far fa-star"></i>
+                                                                                    <i class="far fa-star"></i>
+                                                                                    <i class="far fa-star"></i>
+                                                                                </div>
+                                                                                <span>97%</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
 
-                                                        <div class="uk-width-2-5"></div>
+                                                        <div class="uk-width-2-5">
+                                                            <div class="uk-child-width-expand uk-flex-right" uk-grid>
+                                                                <div class="uk-width-auto" uk-margin>
+                                                                    <div class="uk-text-primary">100 000 р.</div>
+                                                                    <div class="uk-text-primary">10 000 р./м<sup>2</sup></div>
+                                                                    <div class="uk-text-large">1178 м<sup>2</sup></div>
+                                                                    <div class="uk-badge uk-light uk-background-secondary uk-text-uppercase">морозильник</div>
+                                                                </div>
+
+                                                                <div uk-margin="margin: uk-margin-top">
+                                                                    <button class="uk-button uk-button-default uk-width-1-1">Обработать 10 откликов</button>
+                                                                    <button class="uk-button uk-button-default uk-width-1-1">Назначить брокера</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <ul class="uk-padding-remove" uk-accordion>
+                                                    <li>
+                                                        <a class="tm-toggle uk-accordion-title uk-text-right uk-background-muted" href="#">Статистика просмотров</a>
+                                                        <div class="uk-accordion-content">
+                                                            <ul class="uk-subnav">
+                                                                <li class="uk-active"><a href="">Дни</a></li>
+                                                                <li><a href="">Месяц</a></li>
+                                                            </ul>
+                                                            <div class="uk-text-center">
+                                                                <img src="images/graph-notice.jpg" alt="">
+                                                            </div>
+                                                            <div class="uk-flex uk-flex-middle uk-flex-between">
+                                                                <div>
+                                                                    <div class="tm-border-rounded uk-flex uk-flex-around">
+                                                                        <div>12 апреля</div>
+                                                                        <div>
+                                                                            <ul class="uk-iconnav uk-padding-remove">
+                                                                                <li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+                                                                                <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div>
+                                                                    <ul class="uk-subnav">
+                                                                        <li><a href="">Откликов: <span>47</span></a></li>
+                                                                        <li><a href="">Звонков: <span>34</span></a></li>
+                                                                        <li class="uk-active"><a href="">Сообщений: <span>42</span></a></li>
+                                                                        <li><a href="">Добавлено в закладки: <span>63</span></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+
+                                                            <div uk-filter="target: .js-filter-messages">
+
+                                                                <!-- Filter controls -->
+                                                                <ul class="uk-subnav uk-padding-remove">
+                                                                    <li class="uk-active" uk-filter-control><a href="#">все</a></li>
+                                                                    <li uk-filter-control="[data-message='viewed']"><a href="#">просмотренные</a></li>
+                                                                    <li class="uk-active" uk-filter-control="[data-message='unlooked']"><a href="#">непросмотренные</a></li>
+                                                                </ul>
+
+                                                                <!-- Layout items -->
+                                                                <ul class="js-filter-messages uk-padding-remove">
+                                                                    <li data-message="unlooked">
+                                                                        <div class="uk-card uk-card-default uk-padding-small">
+                                                                            <div class="uk-child-width-auto uk-flex-middle" uk-grid>
+                                                                                <div>10:00</div>
+                                                                                
+                                                                                <div>
+                                                                                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                                                                        <div class="uk-width-auto">
+                                                                                            <div class="uk-position-relative">
+                                                                                                <img src="http://via.placeholder.com/46x46" alt="" class="uk-border-circle">
+                                                                                                <div class="uk-position-top-right uk-border-circle"></div>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        <div>
+                                                                                            <h5 class="uk-margin-remove">Мария Иванова</h5>
+                                                                                            <div class="uk-text-muted">юр. лицо</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                
+                                                                                <div class="uk-width-expand">
+                                                                                    <div class="">Склад холодный 300 м<sup>2</sup>, высота около 7м, подъезд с двух сторон, двое ворот для заезда и калитка, освещение, возможно оборудовать под</div>
+                                                                                </div>
+                                                                                
+                                                                                <div>
+                                                                                    <a href="" class="uk-border-circle"><i class="far fa-comments"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-message="viewed">
+                                                                        <div class="uk-card uk-card-default uk-padding-small">
+                                                                            <div class="uk-child-width-auto uk-flex-middle" uk-grid>
+                                                                                <div>10:00</div>
+
+                                                                                <div>
+                                                                                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                                                                        <div class="uk-width-auto">
+                                                                                            <div class="uk-position-relative">
+                                                                                                <img src="http://via.placeholder.com/46x46" alt="" class="uk-border-circle">
+                                                                                                <div class="uk-position-top-right uk-border-circle"></div>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        <div>
+                                                                                            <h5 class="uk-margin-remove">Мария Иванова</h5>
+                                                                                            <div class="uk-text-muted">юр. лицо</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="uk-width-expand">
+                                                                                    <div class="">Склад холодный 300 м<sup>2</sup>, высота около 7м, подъезд с двух сторон, двое ворот для заезда и калитка, освещение, возможно оборудовать под</div>
+                                                                                </div>
+
+                                                                                <div>
+                                                                                    <a href="" class="uk-border-circle"><i class="far fa-comments"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-message="viewed">
+                                                                        <div class="uk-card uk-card-default uk-padding-small">
+                                                                            <div class="uk-child-width-auto uk-flex-middle" uk-grid>
+                                                                                <div>10:00</div>
+
+                                                                                <div>
+                                                                                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                                                                        <div class="uk-width-auto">
+                                                                                            <div class="uk-position-relative">
+                                                                                                <img src="http://via.placeholder.com/46x46" alt="" class="uk-border-circle">
+                                                                                                <div class="uk-position-top-right uk-border-circle"></div>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        <div>
+                                                                                            <h5 class="uk-margin-remove">Мария Иванова</h5>
+                                                                                            <div class="uk-text-muted">юр. лицо</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="uk-width-expand">
+                                                                                    <div class="">Склад холодный 300 м<sup>2</sup>, высота около 7м, подъезд с двух сторон, двое ворот для заезда и калитка, освещение, возможно оборудовать под</div>
+                                                                                </div>
+
+                                                                                <div>
+                                                                                    <a href="" class="uk-border-circle"><i class="far fa-comments"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-message="unlooked">
+                                                                        <div class="uk-card uk-card-default uk-padding-small">
+                                                                            <div class="uk-child-width-auto uk-flex-middle" uk-grid>
+                                                                                <div>10:00</div>
+
+                                                                                <div>
+                                                                                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                                                                        <div class="uk-width-auto">
+                                                                                            <div class="uk-position-relative">
+                                                                                                <img src="http://via.placeholder.com/46x46" alt="" class="uk-border-circle">
+                                                                                                <div class="uk-position-top-right uk-border-circle"></div>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        <div>
+                                                                                            <h5 class="uk-margin-remove">Мария Иванова</h5>
+                                                                                            <div class="uk-text-muted">юр. лицо</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="uk-width-expand">
+                                                                                    <div class="">Склад холодный 300 м<sup>2</sup>, высота около 7м, подъезд с двух сторон, двое ворот для заезда и калитка, освещение, возможно оборудовать под</div>
+                                                                                </div>
+
+                                                                                <div>
+                                                                                    <a href="" class="uk-border-circle"><i class="far fa-comments"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-message="viewed">
+                                                                        <div class="uk-card uk-card-default uk-padding-small">
+                                                                            <div class="uk-child-width-auto uk-flex-middle" uk-grid>
+                                                                                <div>10:00</div>
+
+                                                                                <div>
+                                                                                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                                                                        <div class="uk-width-auto">
+                                                                                            <div class="uk-position-relative">
+                                                                                                <img src="http://via.placeholder.com/46x46" alt="" class="uk-border-circle">
+                                                                                                <div class="uk-position-top-right uk-border-circle"></div>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        <div>
+                                                                                            <h5 class="uk-margin-remove">Мария Иванова</h5>
+                                                                                            <div class="uk-text-muted">юр. лицо</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="uk-width-expand">
+                                                                                    <div class="">Склад холодный 300 м<sup>2</sup>, высота около 7м, подъезд с двух сторон, двое ворот для заезда и калитка, освещение, возможно оборудовать под</div>
+                                                                                </div>
+
+                                                                                <div>
+                                                                                    <a href="" class="uk-border-circle"><i class="far fa-comments"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </li>
 
                                             <li data-search="looking_for" data-active="not_active" data-brokers="with_brokers">
