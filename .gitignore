@@ -1,3 +1,5 @@
 /.idea/
 /node_modules/
 *Thumbs.db
+/styles/components/
+/.gitignore
