@@ -1896,6 +1896,7 @@ select.uk-form-width-xsmall {
   color: #616e7d;
   border: 1px solid #474747;
   text-transform: none;
+  font-size: 16px;
 }
 /* Hover + Focus */
 .uk-button-default:hover,
@@ -1993,7 +1994,7 @@ select.uk-form-width-xsmall {
 .uk-button-large {
   padding: 0 30px;
   line-height: 53px;
-  font-size: 14px;
+  font-size: 16px;
 }
 /* Text modifiers
  ========================================================================== */
@@ -11906,6 +11907,7 @@ iframe.uk-cover {
   color: #616e7d;
   border: solid 1px #75bc40;
   font-weight: bold;
+  height: 53px;
 }
 .tm-button-default:hover,
 .tm-button-default:focus {

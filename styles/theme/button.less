@@ -12,7 +12,7 @@
 @button-large-line-height:                      @global-control-large-height - (@button-border-width * 2);
 
 @button-font-size:                              @global-small-font-size;
-@button-large-font-size:                        @global-small-font-size;
+@button-large-font-size:                        @global-font-size;
 
 @button-default-background:                     @global-default-background;
 @button-default-color:                          @global-muted-color;
@@ -74,6 +74,7 @@
 .hook-button-default() {
     border: @button-border-width solid @button-default-border;
     text-transform: none;
+    font-size: @button-large-font-size;
 }
 
 .hook-button-default-hover() { border-color: @button-default-hover-border; }
