@@ -9,7 +9,8 @@
     <meta name="description" content="Химчистка мебели">
     <meta name="keywords" content="химчистка, мебель">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <link rel="stylesheet" href="styles/theme.css">
 
@@ -20,26 +21,121 @@
     <div class="uk-child-width-1-1 uk-height-viewport uk-flex uk-flex-wrap uk-flex-wrap-between">
         <div>
             <header class=""></header>
-            
+
             <div class="uk-position-relative">
                 <div class="uk-grid-collapse" uk-grid>
                     <!--left sidebar-->
                     <aside class="uk-width-medium"></aside>
-                    
+
                     <!--main side-->
-                    <main class="uk-width-expand">
-                        <div class="uk-container">
-                            <div class="uk-flex-between" uk-grid>
-                                <div>
-                                    <h1>Мои объявления</h1>
+                    <div class="uk-width-expand">
+                        <div class="uk-container" uk-margin="margin: uk-margin-top">
+                            <div class="" uk-margin>
+                                <div class="uk-flex-between" uk-grid>
+                                    <div>
+                                        <h1>Мои объявления</h1>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="uk-button" uk-toggle>
+                                            <i class="fas fa-plus uk-margin-small-right"></i> Разместить объявление
+                                        </a>
+                                    </div>
                                 </div>
-                                <div>
-                                    <a href="#" class="uk-button" uk-toggle></a>
+
+                                <div class="uk-section uk-section-small">
+                                    <div class="uk-flex-between uk-flex-middle" uk-grid>
+                                        <div>
+                                            <div class="uk-flex">
+                                                <h5>На счету:</h5>
+                                                <div>000000 рублей</div>
+                                            </div>
+                                            <div class="uk-text-right">
+                                                <a href="#">Пополнить</a>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="uk-flex">
+                                                <h5>Вид услуг:</h5>
+                                                <div>
+                                                    <select class="uk-select" name="type-of-service" id="">
+                                                        <option value="Список">Список</option>
+                                                        <option value="Список">Список</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <select class="uk-select" name="name-of-company" id="tm-name-of-company">
+                                                <option value="Название компании">Название компании</option>
+                                                <option value="Название компании">Название компании</option>
+                                            </select>
+                                        </div>
+
+                                        <div>
+                                            <a href="">История</a>
+                                        </div>
+
+                                        <div>
+                                            <a href="">Шаблоны</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="uk-section uk-section-small">
+                                    a.
+
+
+
+
+                                    <ul uk-accordion>
+                                        <li class="uk-open">
+                                            <a class="uk-h5 uk-accordion-title" href="#">Объявления:</a>
+                                            <div class="uk-accordion-content">
+                                                <div uk-filter="target: .js-filter-notice">
+
+                                                    <!-- Filter controls -->
+                                                    <ul class="uk-subnav uk-subnav-pill">
+                                                        <li class="uk-active" uk-filter-control><a href="#">Все</a></li>
+                                                        <li uk-filter-control="[data-color='white']"><a
+                                                                href="#">White</a></li>
+                                                        <li uk-filter-control="[data-color='blue']"><a href="#">Blue</a>
+                                                        </li>
+                                                        <li uk-filter-control="[data-color='black']"><a
+                                                                href="#">Black</a></li>
+                                                    </ul>
+
+                                                    <!-- Layout items -->
+                                                    <ul class="js-filter-notice">
+                                                        <li data-color="white">
+                                                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="uk-flex-between uk-flex-middle" uk-grid>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+
                                 </div>
                             </div>
+
+                            <main class=""></main>
+
+                            <div class=""></div>
+
+
                         </div>
-                    </main>
-                    
+                    </div>
                     <!--right sidebar-->
                     <aside class="uk-width-medium"></aside>
 
