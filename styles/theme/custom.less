@@ -1,0 +1,23 @@
+.tm-toggle {
+  display: block;
+  position: relative;
+
+  &::after {
+    content: '\f078';
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    background: none;
+  }
+
+  .uk-open > &::after {
+     content: '\f077';
+    background: none;
+  }
+}
+
+.tm-round {
+  width: 34px;
+  height: 34px;
+  border: 1px solid @global-color;
+}
