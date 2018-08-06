@@ -14,9 +14,20 @@
 @button-font-size:                              @global-small-font-size;
 @button-large-font-size:                        @global-small-font-size;
 
-@button-default-background:                     transparent;
-@button-default-hover-background:               transparent;
-@button-default-active-background:              transparent;
+@button-default-background:                     @global-muted-color;
+@button-default-color:                          @global-color;
+@button-default-hover-background:               @global-secondary-background;
+@button-default-hover-color:                    @global-inverse-color;
+@button-default-active-background:              @global-secondary-background;
+@button-default-active-color:                   @global-inverse-color;
+
+@button-warning-background:                      @global-warning-background;
+@button-warning-color:                           @global-inverse-color;
+@button-warning-hover-background:                darken(@button-danger-background, 5%);
+@button-warning-hover-color:                     @global-inverse-color;
+@button-warning-active-background:               darken(@button-danger-background, 10%);
+@button-warning-active-color:                    @global-inverse-color;
+
 
 @button-disabled-background:                    transparent;
 
@@ -60,7 +71,10 @@
 // Style modifiers
 // ========================================================================
 
-.hook-button-default() { border: @button-border-width solid @button-default-border; }
+.hook-button-default() {
+    border: @button-border-width solid @button-default-border;
+    text-transform: none;
+}
 
 .hook-button-default-hover() { border-color: @button-default-hover-border; }
 

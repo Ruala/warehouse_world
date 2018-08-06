@@ -10,14 +10,22 @@
     background: none;
   }
 
-  .uk-open > &::after {
-     content: '\f077';
-    background: none;
-  }
+//Warning button (orange)
+.uk-button-warning {
+  background-color: @button-warning-background;
+  color: @button-warning-color;
 }
 
-.tm-round {
-  width: 34px;
-  height: 34px;
-  border: 1px solid @global-color;
+/* Hover + Focus */
+.uk-button-warning:hover,
+.uk-button-warning:focus {
+  background-color: @button-warning-hover-background;
+  color: @button-warning-hover-color;
+}
+
+/* OnClick + Active */
+.uk-button-warning:active,
+.uk-button-warning.uk-active {
+  background-color: @button-warning-active-background;
+  color: @button-warning-active-color;
 }
