@@ -1,4 +1,20 @@
-//Warning button (orange)
+.tm-button-default {
+  background-color: @global-default-background;
+  color: @global-muted-color;
+  border: solid 1px @global-success-background;
+
+  &:hover, &:focus {
+    background-color: @global-success-background;
+    color: @global-inverse-color;
+  }
+
+  &:active, &.uk-active {
+    background-color: @global-success-background;
+    color: @global-inverse-color;
+  }
+}
+
+//Warning button (VIP)
 .tm-button-warning {
   background-color: @button-warning-background;
   color: @button-warning-color;
