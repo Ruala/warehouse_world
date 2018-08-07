@@ -12030,4 +12030,10 @@ iframe.uk-cover {
 .tm-blur-control li {
   filter: blur(3px);
 }
+.tm-blur-control li:hover {
+  filter: none;
+}
+.tm-blur-control li:hover :first-child {
+  padding: 5px;
+}
 /*# sourceMappingURL=theme.css.map */

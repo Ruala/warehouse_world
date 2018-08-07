@@ -155,5 +155,12 @@
 .tm-blur-control{
   li {
     filter: blur(3px);
+
+    &:hover {
+      filter: none;
+      :first-child {
+        padding: 5px;
+      }
+    }
   }
 }
