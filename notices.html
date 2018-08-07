@@ -105,7 +105,8 @@
                                                                 <div>
                                                                     <div class="uk-button-group">
                                                                         <button class="uk-active uk-button uk-button-default"
-                                                                                uk-filter-control>Все
+                                                                                uk-filter-control>
+                                                                            Все
                                                                         </button>
                                                                     </div>
                                                                 </div>
@@ -146,6 +147,16 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <ul class="tm-subnav-sort uk-subnav uk-flex-right">
+                                                                <li
+                                                                    uk-filter-control="sort: data-date; order: desc">
+                                                                    <a href="#">по дате</a>
+                                                                </li>
+                                                                <li class="uk-active"
+                                                                    uk-filter-control="sort: data-popularity; order: desc">
+                                                                    <a href="#">по популярности</a>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -153,8 +164,8 @@
 
                                             <!-- Layout items -->
                                             <ul class="js-filter-notice uk-list">
-                                                <li data-search="propose" data-active="active"
-                                                    data-brokers="without_brokers">
+                                                <li data-search="propose" data-active="active" data-brokers="without_brokers"
+                                                    data-date="2018-12-02" data-popularity="12">
                                                     <div class="uk-card uk-card-default uk-padding-small">
                                                         <div class="" uk-grid>
                                                             <div class="uk-width-3-5">
@@ -553,9 +564,9 @@
                                                     </ul>
                                                 </li>
 
-                                                <li data-search="looking_for" data-active="not_active"
-                                                    data-brokers="with_brokers">
-                                                    <div class="uk-card uk-card-default uk-padding-small">
+                                                <li data-search="looking_for" data-active="not_active" data-brokers="with_brokers"
+                                                    data-date="2017-10-05" data-popularity="125">
+<div class="uk-card uk-card-default uk-padding-small">
                                                         <div class="" uk-grid>
                                                             <div class="uk-width-3-5">
                                                                 <div class="uk-child-width-expand" uk-grid>
