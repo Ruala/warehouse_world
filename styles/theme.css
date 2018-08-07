@@ -4182,11 +4182,11 @@ ul.uk-nav-sub {
   display: block;
   /* 2 */
   color: #616e7d;
-  font-size: 14px;
-  text-transform: uppercase;
+  font-size: 16px;
+  text-transform: none;
   transition: 0.1s ease-in-out;
   transition-property: color, background-color;
-  text-decoration: none;
+  text-decoration: underline;
 }
 /* Hover + Focus */
 .uk-subnav > * > a:hover,
@@ -4198,6 +4198,7 @@ ul.uk-nav-sub {
 /* Active */
 .uk-subnav > .uk-active > a {
   color: #262f3a;
+  text-decoration: none;
 }
 /* Divider modifier
  ========================================================================== */
@@ -11992,11 +11993,16 @@ iframe.uk-cover {
 .tm-button-plus-big {
   font-size: 45px;
 }
+.tm-button-small {
+  height: 35px;
+}
 .tm-subnav-sort > * > :first-child {
   color: #6c94c9;
+  text-decoration: none;
 }
 .tm-subnav-sort > * > a {
   text-decoration: none;
+  text-transform: uppercase;
 }
 .tm-subnav-sort > * > a:hover {
   color: #616e7d;

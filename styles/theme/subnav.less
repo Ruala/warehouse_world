@@ -11,9 +11,9 @@
 // New
 //
 
-@subnav-item-font-size:                         @global-small-font-size;
-@subnav-item-text-transform:                    uppercase;
-@subnav-item-text-decoretion:                   none;
+@subnav-item-font-size:                         @global-font-size; //was small
+@subnav-item-text-transform:                    none; //was uppercase
+@subnav-item-text-decoration:                   underline;
 
 // Component
 // ========================================================================
@@ -25,12 +25,14 @@
     text-transform: @subnav-item-text-transform;
     transition: 0.1s ease-in-out;
     transition-property: color, background-color;
-    text-decoration: @subnav-item-text-decoretion;
+    text-decoration: @subnav-item-text-decoration;
 }
 
 .hook-subnav-item-hover() {}
 
-.hook-subnav-item-active() {}
+.hook-subnav-item-active() {
+    text-decoration: none;
+}
 
 
 // Divider modifier
