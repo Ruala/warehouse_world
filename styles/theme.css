@@ -4188,6 +4188,9 @@ ul.uk-nav-sub {
   transition-property: color, background-color;
   text-decoration: underline;
 }
+.uk-subnav > * > :first-child:focus {
+  color: #616e7d;
+}
 /* Hover + Focus */
 .uk-subnav > * > a:hover,
 .uk-subnav > * > a:focus {
@@ -12023,5 +12026,8 @@ iframe.uk-cover {
 .tm-subnav-tabs > .uk-active > a {
   color: #616e7d;
   text-decoration: underline;
+}
+.tm-subnav-nd > * > :first-child {
+  text-decoration: none;
 }
 /*# sourceMappingURL=theme.css.map */
