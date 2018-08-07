@@ -52,13 +52,13 @@ a:hover {
 a,
 .uk-link {
   color: #6c94c9;
-  text-decoration: none;
+  text-decoration: underline;
   cursor: pointer;
 }
 a:hover,
 .uk-link:hover {
   color: #0f6ecd;
-  text-decoration: underline;
+  text-decoration: none;
 }
 /* Text-level semantics
  ========================================================================== */
@@ -258,6 +258,7 @@ h1,
 .uk-h1 {
   font-size: 32px;
   line-height: 1.2;
+  font-weight: bold;
 }
 h2,
 .uk-h2 {
@@ -11965,5 +11966,17 @@ iframe.uk-cover {
 .tm-iconnav-secondary > * > a {
   background: #ff8a48;
   color: #ffffff;
+}
+.tm-background-feedbacks {
+  background: darkorange;
+}
+.tm-background-calls {
+  background: darkviolet;
+}
+.tm-background-messages {
+  background: green;
+}
+.tm-background-marks {
+  background: darkred;
 }
 /*# sourceMappingURL=theme.css.map */

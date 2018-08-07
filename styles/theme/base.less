@@ -9,6 +9,10 @@
 
 @base-body-background:                          @global-muted-background;
 
+@base-link-text-decoration:                     underline;
+@base-link-hover-text-decoration:               none;
+
+
 @base-h1-font-size:                             @global-xxlarge-font-size;
 //@base-h1-line-height:                           1.2;
 @base-h2-font-size:                             @global-xlarge-font-size;
@@ -70,7 +74,9 @@
 
 .hook-base-heading() {}
 
-.hook-base-h1() {}
+.hook-base-h1() {
+    font-weight: bold;
+}
 
 .hook-base-h2() {}
 

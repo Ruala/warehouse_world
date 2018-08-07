@@ -3,3 +3,4 @@
 *Thumbs.db
 /styles/components/
 /.gitignore
+/package-lock.json
