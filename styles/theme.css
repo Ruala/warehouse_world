@@ -4186,6 +4186,7 @@ ul.uk-nav-sub {
   text-transform: uppercase;
   transition: 0.1s ease-in-out;
   transition-property: color, background-color;
+  text-decoration: none;
 }
 /* Hover + Focus */
 .uk-subnav > * > a:hover,
@@ -11990,5 +11991,17 @@ iframe.uk-cover {
 }
 .tm-button-plus-big {
   font-size: 45px;
+}
+.tm-subnav-sort > * > :first-child {
+  color: #6c94c9;
+}
+.tm-subnav-sort > * > a {
+  text-decoration: none;
+}
+.tm-subnav-sort > * > a:hover {
+  color: #616e7d;
+}
+.tm-subnav-sort > .uk-active > a {
+  color: #616e7d;
 }
 /*# sourceMappingURL=theme.css.map */

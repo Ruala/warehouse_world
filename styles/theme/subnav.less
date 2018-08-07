@@ -13,7 +13,7 @@
 
 @subnav-item-font-size:                         @global-small-font-size;
 @subnav-item-text-transform:                    uppercase;
-
+@subnav-item-text-decoretion:                   none;
 
 // Component
 // ========================================================================
@@ -25,6 +25,7 @@
     text-transform: @subnav-item-text-transform;
     transition: 0.1s ease-in-out;
     transition-property: color, background-color;
+    text-decoration: @subnav-item-text-decoretion;
 }
 
 .hook-subnav-item-hover() {}
