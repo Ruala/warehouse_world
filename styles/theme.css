@@ -12028,12 +12028,13 @@ iframe.uk-cover {
   text-decoration: none;
 }
 .tm-blur-control li {
-  filter: blur(3px);
+  filter: blur(2px);
 }
 .tm-blur-control li:hover {
   filter: none;
 }
 .tm-blur-control li:hover :first-child {
-  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 /*# sourceMappingURL=theme.css.map */
