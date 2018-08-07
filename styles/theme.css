@@ -11966,6 +11966,9 @@ iframe.uk-cover {
   height: 34px;
   border: 1px solid #1f2833;
 }
+.tm-text-medium {
+  font-size: 18px;
+}
 .tm-text-huge {
   font-size: 24px;
 }
@@ -11984,5 +11987,8 @@ iframe.uk-cover {
 }
 .tm-background-marks {
   background: #900e0e;
+}
+.tm-button-plus-big {
+  font-size: 45px;
 }
 /*# sourceMappingURL=theme.css.map */
