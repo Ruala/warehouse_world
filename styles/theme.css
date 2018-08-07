@@ -1507,8 +1507,8 @@ button.uk-icon:not(:disabled) {
  */
 .uk-form-success,
 .uk-form-success:focus {
-  color: #7fb281;
-  border-color: #7fb281;
+  color: #75bc40;
+  border-color: #75bc40;
 }
 /*
  * Blank
@@ -3114,8 +3114,8 @@ select.uk-form-width-xsmall {
  * Success
  */
 .uk-alert-success {
-  background: #ffffff;
-  color: #7fb281;
+  background: #f0f8eb;
+  color: #75bc40;
 }
 /*
  * Warning
@@ -3203,7 +3203,7 @@ select.uk-form-width-xsmall {
  * Success
  */
 .uk-label-success {
-  background-color: #7fb281;
+  background-color: #75bc40;
   color: #ffffff;
 }
 /*
@@ -5808,7 +5808,7 @@ ul.uk-nav-sub {
  * Success
  */
 .uk-notification-message-success {
-  color: #7fb281;
+  color: #75bc40;
 }
 /*
  * Warning
@@ -7035,7 +7035,7 @@ ul.uk-nav-sub {
   color: #6c94c9 !important;
 }
 .uk-text-success {
-  color: #7fb281 !important;
+  color: #75bc40 !important;
 }
 .uk-text-warning {
   color: #e9a138 !important;
@@ -11906,18 +11906,18 @@ iframe.uk-cover {
 .tm-button-default {
   background-color: #fbfbfb;
   color: #616e7d;
-  border: solid 1px #7fb281;
+  border: solid 1px #75bc40;
   font-weight: bold;
   height: 53px;
 }
 .tm-button-default:hover,
 .tm-button-default:focus {
-  background-color: #7fb281;
+  background-color: #75bc40;
   color: #ffffff;
 }
 .tm-button-default:active,
 .tm-button-default.uk-active {
-  background-color: #7fb281;
+  background-color: #75bc40;
   color: #ffffff;
 }
 .tm-button-warning {
