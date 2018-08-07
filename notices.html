@@ -105,7 +105,7 @@
                                                                 <div>
                                                                     <div class="uk-button-group">
                                                                         <button class="uk-active uk-button uk-button-default"
-                                                                                uk-filter-control="group: all-notice">
+                                                                                uk-filter-control>
                                                                             Все
                                                                         </button>
                                                                     </div>
@@ -113,11 +113,11 @@
                                                                 <div>
                                                                     <div class="uk-button-group">
                                                                         <button class="uk-button uk-button-default"
-                                                                                uk-filter-control="filter: [data-search='looking_for']; group: data-search">
+                                                                                uk-filter-control="filter: [data-search='looking_for']; group: search">
                                                                             Ищу
                                                                         </button>
                                                                         <button class="uk-button uk-button-default"
-                                                                                uk-filter-control="filter: [data-search='propose']; group: data-search">
+                                                                                uk-filter-control="filter: [data-search='propose']; group: search">
                                                                             Предлагаю
                                                                         </button>
                                                                     </div>
@@ -125,11 +125,11 @@
                                                                 <div>
                                                                     <div class="uk-button-group">
                                                                         <button class="uk-button uk-button-default"
-                                                                                uk-filter-control="filter: [data-active='active']; group: data-active">
+                                                                                uk-filter-control="filter: [data-active='active']; group: active">
                                                                             Активные
                                                                         </button>
                                                                         <button class="uk-button uk-button-default"
-                                                                                uk-filter-control="filter: [data-active='not_active']; group: data-active">
+                                                                                uk-filter-control="filter: [data-active='not_active']; group: active">
                                                                             Неактивные
                                                                         </button>
                                                                     </div>
@@ -137,11 +137,11 @@
                                                                 <div>
                                                                     <div class="uk-button-group">
                                                                         <button class="uk-button uk-button-default"
-                                                                                uk-filter-control="filter: [data-brokers='without_brokers']; group: data-brokers">
+                                                                                uk-filter-control="filter: [data-brokers='without_brokers']; group: brokers">
                                                                             Без брокеров
                                                                         </button>
                                                                         <button class="uk-button uk-button-default"
-                                                                                uk-filter-control="filter: [data-brokers='with_brokers']; group: data-brokers">
+                                                                                uk-filter-control="filter: [data-brokers='with_brokers']; group: brokers">
                                                                             С брокерами
                                                                         </button>
                                                                     </div>
@@ -313,13 +313,16 @@
 
                                                                     <!-- Filter controls -->
                                                                     <ul class="uk-subnav uk-padding-remove">
-                                                                        <li class="uk-active" uk-filter-control="group: all-messages"><a
-                                                                                href="#">все</a></li>
-                                                                        <li uk-filter-control="[data-message='viewed']; group: view-messages">
-                                                                            <a href="#">просмотренные</a></li>
-                                                                        <li class="uk-active"
-                                                                            uk-filter-control="[data-message='unlooked']; group: view-messages">
-                                                                            <a href="#">непросмотренные</a></li>
+                                                                        <li
+                                                                            uk-filter-control>
+                                                                            <a href="#">все</a>
+                                                                        </li>
+                                                                        <li uk-filter-control="[data-message='viewed']; group: messages">
+                                                                            <a href="#">просмотренные</a>
+                                                                        </li>
+                                                                        <li uk-filter-control="[data-message='unlooked']; group: messages">
+                                                                            <a href="#">непросмотренные</a>
+                                                                        </li>
                                                                     </ul>
 
                                                                     <!-- Layout items -->
