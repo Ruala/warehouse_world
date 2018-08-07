@@ -129,3 +129,21 @@
 .tm-subnav-sort > .uk-active > a {
   color: @global-muted-color;
 }
+
+.tm-subnav-tabs > * > :first-child {
+  text-decoration: none;
+}
+
+.tm-subnav-tabs > * > a {
+  text-decoration: none;
+
+  &:hover {
+    color: @global-muted-color;
+    text-decoration: underline;
+  }
+}
+
+.tm-subnav-tabs > .uk-active > a {
+  color: @global-muted-color;
+  text-decoration: underline;
+}

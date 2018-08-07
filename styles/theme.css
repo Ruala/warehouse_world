@@ -12010,4 +12010,18 @@ iframe.uk-cover {
 .tm-subnav-sort > .uk-active > a {
   color: #616e7d;
 }
+.tm-subnav-tabs > * > :first-child {
+  text-decoration: none;
+}
+.tm-subnav-tabs > * > a {
+  text-decoration: none;
+}
+.tm-subnav-tabs > * > a:hover {
+  color: #616e7d;
+  text-decoration: underline;
+}
+.tm-subnav-tabs > .uk-active > a {
+  color: #616e7d;
+  text-decoration: underline;
+}
 /*# sourceMappingURL=theme.css.map */
