@@ -9,7 +9,7 @@
 
 @table-header-cell-font-size:                   @global-small-font-size;
 @table-header-cell-font-weight:                 normal;
-@table-header-cell-color:                       @global-muted-color;
+@table-header-cell-color:                       @global-color;//@global-muted-color;
 
 @table-hover-row-background:                    @global-default-background;
 
@@ -24,11 +24,23 @@
 // Component
 // ========================================================================
 
-.hook-table-header-cell() { text-transform: uppercase; }
+.hook-table() {
+    &.tm-table-bordered {
+        th,td {
+            border: solid 1px @global-border;
+        }
+    }
+}
+
+.hook-table-header-cell() {
+    //text-transform: uppercase;
+    text-align: center;
+    font-size: @global-font-size;
+}
 
 .hook-table-cell() {}
 
-.hook-table-footer() {  }
+.hook-table-footer() {}
 
 .hook-table-caption() {}
 
