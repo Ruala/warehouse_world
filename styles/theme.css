@@ -12138,6 +12138,26 @@ iframe.uk-cover {
   background-color: #fbfbfb;
   border: solid 1px #ccc;
 }
+.tm-indicator-primary {
+  color: #6c94c9;
+}
+.tm-indicator-off {
+  color: #ccc;
+}
+.tm-muted-background {
+  background-color: #616e7d;
+}
+.tm-indicator-oblong {
+  width: 35px;
+  height: 10px;
+  border-radius: 500px;
+}
+.tm-indicator-oblong-low {
+  background-color: #ff8a48;
+}
+.tm-indicator-oblong-normal {
+  background-color: #75bc40;
+}
 .uk-comment .uk-comment-body {
   position: relative;
   padding-left: 70px;
