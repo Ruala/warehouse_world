@@ -4839,6 +4839,8 @@ ul.uk-nav-sub {
   background: #ffffff;
   color: #1f2833;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  border: solid 1px #b0b6be;
 }
 /* Show */
 .uk-dropdown.uk-open {
@@ -12213,6 +12215,10 @@ iframe.uk-cover {
 }
 .uk-comment.uk-comment-primary .uk-comment-body > div {
   background-color: #faf5f5;
+}
+.tm-hover-light:hover,
+.tm-hover-light:focus {
+  color: #96a1ae;
 }
 .select2-container--default .select2-selection--single {
   background-color: #f5f5f5;
