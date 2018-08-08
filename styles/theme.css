@@ -3403,7 +3403,6 @@ select.uk-form-width-xsmall {
  ========================================================================== */
 .uk-comment-primary {
   padding: 20px;
-  background-color: #f5f5f5;
 }
 /* ========================================================================
    Component: Search
@@ -12165,6 +12164,7 @@ iframe.uk-cover {
 }
 .uk-comment .uk-comment-body > div {
   position: relative;
+  background-color: #faf5f5;
 }
 .uk-comment .tm-indicator-selected {
   position: absolute;
@@ -12184,7 +12184,7 @@ iframe.uk-cover {
 .uk-comment.uk-comment-primary .uk-comment-header {
   justify-content: flex-end;
 }
-.uk-comment.uk-comment-primary .uk-comment-body {
+.uk-comment.uk-comment-primary .uk-comment-body > div {
   background-color: #faf5f5;
 }
 .select2-container--default .select2-selection--single {
