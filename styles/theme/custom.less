@@ -174,3 +174,35 @@
 .tm-border-dribble {
   border-radius: 50% 0 50% 50%;
 }
+
+//Warning! Select2 section!!!
+
+.select2-container--default .select2-selection--single {
+  background-color: @global-muted-background;
+
+  border: 1px solid rgba(97, 110, 125, 0.35);
+  border-radius: 5px;
+}
+
+.select2-container .select2-selection--single {
+  height: 40px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: @global-color;
+  line-height: 40px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 10px;
+}
+
+.tm-select-company {
+  .select2-container--default .select2-selection--single {
+    background-color: transparent;
+
+    border: none;
+  }
+}
+
+//End of Select2 section!

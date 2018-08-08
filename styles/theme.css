@@ -1,8 +1,20 @@
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_cJD3g3D-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459W1hzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_dJE3g3D-w.ttf) format('truetype');
 }
 /* ========================================================================
    Component: Base
@@ -12042,5 +12054,24 @@ iframe.uk-cover {
 }
 .tm-border-dribble {
   border-radius: 50% 0 50% 50%;
+}
+.select2-container--default .select2-selection--single {
+  background-color: #f5f5f5;
+  border: 1px solid rgba(97, 110, 125, 0.35);
+  border-radius: 5px;
+}
+.select2-container .select2-selection--single {
+  height: 40px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #1f2833;
+  line-height: 40px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 10px;
+}
+.tm-select-company .select2-container--default .select2-selection--single {
+  background-color: transparent;
+  border: none;
 }
 /*# sourceMappingURL=theme.css.map */
