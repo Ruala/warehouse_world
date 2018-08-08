@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Title</title>
+
+    <meta name="description" content="Химчистка мебели">
+    <meta name="keywords" content="химчистка, мебель">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./node_modules/select2/dist/css/select2.css">
+
+    <link rel="stylesheet" href="styles/theme.css">
+
+</head>
+<body>
+
+<div class="uk-offcanvas-content">
+    <div class="uk-child-width-1-1 uk-height-viewport uk-flex uk-flex-wrap uk-flex-wrap-between">
+        <div>
+            <header class=""></header>
+
+            <div class="tm-contetnt-wrap uk-padding-large uk-padding-remove-horizontal">
+                <div class="uk-container uk-container-expand uk-position-relative">
+                    <div uk-grid>
+                        <!--left sidebar-->
+                        <aside class="uk-width-medium">left sidebar</aside>
+
+                        <!--main side-->
+                        <div class="uk-width-expand">
+                            <div class="uk-container" uk-margin="margin: uk-margin-top">
+                                <div class="" uk-margin>
+                                    <div>
+                                        <h1>Тендеры</h1>
+                                    </div>
+
+                                    <div class="uk-section uk-padding-remove">
+                                        <div class="uk-card uk-card-default uk-padding-small">
+                                            <div class="uk-flex-between uk-flex-middle" uk-grid>
+                                                <div>
+                                                    <div class="tm-padding uk-padding-remove-horizontal uk-position-relative">
+                                                        <div class="uk-flex">
+                                                            <div class="uk-margin-small-right">На счету:</div>
+                                                            <div class="uk-text-bold">000000 рублей</div>
+                                                        </div>
+                                                        <a href="#" class="uk-position-bottom-right">Пополнить</a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="uk-flex uk-flex-middle">
+                                                        <div class="uk-margin-small-right">Вид услуг:</div>
+                                                        <div>
+                                                            <select class="uk-select" name="type-of-service" id="">
+                                                                <option value="Список">Список</option>
+                                                                <option value="Список">Список</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <select class="tm-select-company uk-select" name="name-of-company"
+                                                            id="tm-name-of-company">
+                                                        <option value="Название компании">Название компании</option>
+                                                        <option value="Название компании">Название компании</option>
+                                                    </select>
+                                                </div>
+
+                                                <div>
+                                                    <a class="uk-link-text" href="">История</a>
+                                                </div>
+
+                                                <div>
+                                                    <a class="uk-link-text" href="">Шаблоны</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-section uk-padding-remove">
+                                        <ul uk-accordion>
+                                            <li class="uk-open">
+                                                <a class="tm-toggle uk-accordion-title uk-link-reset uk-card uk-card-default uk-padding-small" href="#">
+                                                    <div class="uk-flex-between uk-flex-middle" uk-grid>
+                                                        <div>
+                                                            <h4 class="uk-margin-remove">Тендер 1</h4>
+                                                            <div class="uk-text-muted">01.04.2018</div>
+                                                        </div>
+                                                        <div>
+                                                            <button class="tm-button-default uk-button">Выгрузить в Excel</button>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div class="uk-accordion-content uk-card uk-card-default uk-padding-small uk-margin-remove">
+                                                    <table class="tm-blur-control uk-table uk-table-small uk-table-divider uk-table-middle uk-table-responsive uk-table-hover uk-text-center">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Название компании</th>
+                                                                <th>
+                                                                    <div>Хранение 1 паллет</div>
+                                                                    <div class="uk-text-right">
+                                                                        <button class="uk-button uk-button-text"><i class="fas fa-chevron-down"></i></button>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div>Механиз-ная приемка 1 паллет</div>
+                                                                    <div class="uk-text-right">
+                                                                        <button class="uk-button uk-button-text"><i class="fas fa-chevron-down"></i></button>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div>Ручная приемка</div>
+                                                                    <div class="uk-text-right">
+                                                                        <button class="uk-button uk-button-text"><i class="fas fa-chevron-down"></i></button>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div>Комплектация заказов 1 коробка</div>
+                                                                    <div class="uk-text-right">
+                                                                        <button class="uk-button uk-button-text"><i class="fas fa-chevron-down"></i></button>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div>Обмотка стрейч пленкой 2 комплекта</div>
+                                                                    <div class="uk-text-right">
+                                                                        <button class="uk-button uk-button-text"><i class="fas fa-chevron-down"></i></button>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div>Оформление документов на отгрузку</div>
+                                                                    <div class="uk-text-right">
+                                                                        <button class="uk-button uk-button-text"><i class="fas fa-chevron-down"></i></button>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div>Стоимость 1 пустого поддона</div>
+                                                                    <div class="uk-text-right">
+                                                                        <button class="uk-button uk-button-text"><i class="fas fa-chevron-down"></i></button>
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="uk-width-medium">
+                                                                    <div class="uk-child-width-expand uk-grid-small uk-flex-middle" uk-grid>
+                                                                        <div class="uk-width-auto">
+                                                                            <img src="http://via.placeholder.com/66x66" alt="" class="tm-border-dribble">
+                                                                            <div class="uk-flex uk-flex-middle">
+                                                                                <div class="uk-margin-small-right uk-text-muted">
+                                                                                    <i class="fas fa-star"></i>
+                                                                                </div>
+                                                                                <div>97%</div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="uk-text-left">
+                                                                            <a href="" class="uk-h5 tm-text-medium uk-margin-remove">Складологистик</a>
+                                                                            <div class="tm-text-medium uk-text-muted">Ольга Егорова</div>
+                                                                            <div class="uk-margin-small-top uk-flex uk-flex-middle">
+                                                                                <ul class="uk-iconnav uk-flex-right uk-margin-small-right">
+                                                                                    <li>
+                                                                                        <a href="" class="uk-border-circle">
+                                                                                            <img src="images/icons/speech-bubble.png">
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="" class="uk-border-circle">
+                                                                                            <img src="images/icons/speech-bubble.png">
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                                <a href="" class="tm-border-rounded uk-button uk-flex uk-flex-middle">
+                                                                                    <img src="images/icons/speech-bubble.png" class="uk-margin-small-right">
+                                                                                    <span>Откликнуться</span>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="uk-width-medium">
+                                                                    <div class="uk-child-width-expand uk-grid-small uk-flex-middle" uk-grid>
+                                                                        <div class="uk-width-auto">
+                                                                            <img src="http://via.placeholder.com/66x66" alt="" class="tm-border-dribble">
+                                                                        </div>
+
+                                                                        <div class="uk-text-left">
+                                                                            <h5 class="tm-text-medium uk-margin-remove">Название фирмы</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="uk-width-medium">
+                                                                    <div class="uk-child-width-expand uk-grid-small uk-flex-middle" uk-grid>
+                                                                        <div class="uk-width-auto">
+                                                                            <img src="http://via.placeholder.com/66x66" alt="" class="tm-border-dribble">
+                                                                        </div>
+
+                                                                        <div class="uk-text-left">
+                                                                            <h5 class="tm-text-medium uk-margin-remove">Название фирмы</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="uk-width-medium">
+                                                                    <div class="uk-child-width-expand uk-grid-small uk-flex-middle" uk-grid>
+                                                                        <div class="uk-width-auto">
+                                                                            <img src="http://via.placeholder.com/66x66" alt="" class="tm-border-dribble">
+                                                                        </div>
+
+                                                                        <div class="uk-text-left">
+                                                                            <h5 class="tm-text-medium uk-margin-remove">Название фирмы</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="tm-toggle uk-accordion-title uk-h4 uk-margin-remove uk-link-reset uk-card uk-card-default uk-padding-small" href="#">Тендер 2</a>
+                                                <div class="uk-accordion-content uk-card uk-card-default uk-padding-small uk-margin-remove">
+                                                    <table class="tm-blur-control uk-table uk-table-small uk-table-divider uk-table-middle uk-table-responsive uk-table-hover uk-text-center">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Название компании</th>
+                                                                <th>
+                                                                    <div>Хранение 1 паллет</div>
+                                                                    <div class="uk-text-right">
+                                                                        <button class="uk-button uk-button-text"><i class="fas fa-chevron-down"></i></button>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div>Механиз-ная приемка 1 паллет</div>
+                                                                    <div class="uk-text-right">
+                                                                        <button class="uk-button uk-button-text"><i class="fas fa-chevron-down"></i></button>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div>Ручная приемка</div>
+                                                                    <div class="uk-text-right">
+                                                                        <button class="uk-button uk-button-text"><i class="fas fa-chevron-down"></i></button>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div>Комплектация заказов 1 коробка</div>
+                                                                    <div class="uk-text-right">
+                                                                        <button class="uk-button uk-button-text"><i class="fas fa-chevron-down"></i></button>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div>Обмотка стрейч пленкой 2 комплекта</div>
+                                                                    <div class="uk-text-right">
+                                                                        <button class="uk-button uk-button-text"><i class="fas fa-chevron-down"></i></button>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div>Оформление документов на отгрузку</div>
+                                                                    <div class="uk-text-right">
+                                                                        <button class="uk-button uk-button-text"><i class="fas fa-chevron-down"></i></button>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div>Стоимость 1 пустого поддона</div>
+                                                                    <div class="uk-text-right">
+                                                                        <button class="uk-button uk-button-text"><i class="fas fa-chevron-down"></i></button>
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="uk-width-medium">
+                                                                    <div class="uk-child-width-expand uk-grid-small uk-flex-middle" uk-grid>
+                                                                        <div class="uk-width-auto">
+                                                                            <img src="http://via.placeholder.com/66x66" alt="" class="tm-border-dribble">
+                                                                            <div class="uk-flex uk-flex-middle">
+                                                                                <div class="uk-margin-small-right uk-text-muted">
+                                                                                    <i class="fas fa-star"></i>
+                                                                                </div>
+                                                                                <div>97%</div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="uk-text-left">
+                                                                            <a href="" class="uk-h5 tm-text-medium uk-margin-remove">Складологистик</a>
+                                                                            <div class="tm-text-medium uk-text-muted">Ольга Егорова</div>
+                                                                            <div class="uk-margin-small-top uk-flex uk-flex-middle">
+                                                                                <ul class="uk-iconnav uk-flex-right uk-margin-small-right">
+                                                                                    <li>
+                                                                                        <a href="" class="uk-border-circle">
+                                                                                            <img src="images/icons/speech-bubble.png">
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="" class="uk-border-circle">
+                                                                                            <img src="images/icons/speech-bubble.png">
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                                <a href="" class="tm-border-rounded uk-button uk-flex uk-flex-middle">
+                                                                                    <img src="images/icons/speech-bubble.png" class="uk-margin-small-right">
+                                                                                    <span>Откликнуться</span>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="uk-width-medium">
+                                                                    <div class="uk-child-width-expand uk-grid-small uk-flex-middle" uk-grid>
+                                                                        <div class="uk-width-auto">
+                                                                            <img src="http://via.placeholder.com/66x66" alt="" class="tm-border-dribble">
+                                                                        </div>
+
+                                                                        <div class="uk-text-left">
+                                                                            <h5 class="tm-text-medium uk-margin-remove">Название фирмы</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="uk-width-medium">
+                                                                    <div class="uk-child-width-expand uk-grid-small uk-flex-middle" uk-grid>
+                                                                        <div class="uk-width-auto">
+                                                                            <img src="http://via.placeholder.com/66x66" alt="" class="tm-border-dribble">
+                                                                        </div>
+
+                                                                        <div class="uk-text-left">
+                                                                            <h5 class="tm-text-medium uk-margin-remove">Название фирмы</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="uk-width-medium">
+                                                                    <div class="uk-child-width-expand uk-grid-small uk-flex-middle" uk-grid>
+                                                                        <div class="uk-width-auto">
+                                                                            <img src="http://via.placeholder.com/66x66" alt="" class="tm-border-dribble">
+                                                                        </div>
+
+                                                                        <div class="uk-text-left">
+                                                                            <h5 class="tm-text-medium uk-margin-remove">Название фирмы</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                                <td>000</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--right sidebar-->
+                        <aside class="uk-width-medium">right sidebar</aside>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="uk-section"></footer>
+    </div>
+
+
+    <div id="offcanvas-overlay" uk-offcanvas="mode: push; overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <div class="uk-card uk-flex uk-flex-center uk-margin-large-top">
+                <ul class="uk-nav">
+                    <li>
+                        <a href="index.html" class="uk-active"><span>Главная</span></a>
+                    </li>
+
+                    <li>
+                        <a href="services.html"><span>Услуги</span></a>
+                    </li>
+
+                    <li>
+                        <a href="prices.html"><span>Цены</span></a>
+                    </li>
+
+                    <li>
+                        <a href="about.html"><span>О нас</span></a>
+                    </li>
+
+                    <li>
+                        <a href="contacts.html"><span>Контакты и оплата</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.js"></script>
+<script src="node_modules/select2/dist/js/select2.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
