@@ -110,6 +110,7 @@
 
 .tm-button-small {
   height: 35px;
+  min-width: 35px;
 }
 
 .tm-subnav-sort > * > :first-child {
@@ -180,7 +181,7 @@
     &:hover {
       z-index: 2;
       filter: none;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
     }
   }
 }
@@ -191,6 +192,16 @@
 
 .tm-border-dribble {
   border-radius: 50% 0 50% 50%;
+}
+
+.tm-button-dialog {
+  background: @global-success-background;
+  color: @global-inverse-color;
+  text-transform: none;
+}
+
+.tm-border {
+  border: solid 1px grey;
 }
 
 //Warning! Select2 section!!!
