@@ -926,7 +926,7 @@ a.uk-link-reset:hover,
  */
 .uk-table-hover > tr:hover,
 .uk-table-hover tbody tr:hover {
-  background: #ffd;
+  background: #fbfbfb;
 }
 /* Active state
  ========================================================================== */
@@ -5711,6 +5711,10 @@ ul.uk-nav-sub {
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
   border-radius: 500px;
+}
+.uk-iconnav > * > a.tm-nav-big {
+  height: 35px;
+  min-width: 35px;
 }
 /* Hover + Focus */
 .uk-iconnav > * > a:hover,
@@ -12015,6 +12019,7 @@ iframe.uk-cover {
 }
 .tm-button-small {
   height: 35px;
+  min-width: 35px;
 }
 .tm-subnav-sort > * > :first-child {
   color: #6c94c9;
@@ -12067,13 +12072,21 @@ iframe.uk-cover {
 .tm-blur-control tbody tr:hover {
   z-index: 2;
   filter: none;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 .tm-box-shadow {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 .tm-border-dribble {
   border-radius: 50% 0 50% 50%;
+}
+.tm-button-dialog {
+  background: #75bc40;
+  color: #ffffff;
+  text-transform: none;
+}
+.tm-border {
+  border: solid 1px grey;
 }
 .select2-container--default .select2-selection--single {
   background-color: #f5f5f5;
