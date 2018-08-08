@@ -139,13 +139,31 @@
 
   &:hover {
     color: @global-muted-color;
-    text-decoration: underline;
+    //text-decoration: underline;
   }
 }
 
 .tm-subnav-tabs > .uk-active > a {
   color: @global-muted-color;
-  text-decoration: underline;
+  //text-decoration: underline;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+
+  &.tm-border-feedbacks {
+    border-bottom-color: @global-feedbacks-background;
+  }
+
+  &.tm-border-calls {
+    border-bottom-color: @global-calls-background;
+  }
+
+  &.tm-border-messages {
+    border-bottom-color: @global-messages-background;
+  }
+
+  &.tm-border-marks {
+    border-bottom-color: @global-marks-background;
+  }
 }
 
 .tm-subnav-nd > * > :first-child {
