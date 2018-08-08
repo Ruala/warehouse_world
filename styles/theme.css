@@ -12172,7 +12172,7 @@ iframe.uk-cover {
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
 }
-.tm-comment-selected .tm-indicator-selected {
+.uk-comment .tm-indicator-selected.tm-indicator-active {
   opacity: 1;
 }
 .select2-container--default .select2-selection--single {
