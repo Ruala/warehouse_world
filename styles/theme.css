@@ -12099,6 +12099,14 @@ iframe.uk-cover {
 .tm-border {
   border: solid 1px grey;
 }
+.tm-green-dot {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 10px;
+  height: 10px;
+  background-color: #75bc40;
+}
 .select2-container--default .select2-selection--single {
   background-color: #f5f5f5;
   border: 1px solid rgba(97, 110, 125, 0.35);
