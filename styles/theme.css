@@ -1888,6 +1888,7 @@ select.uk-form-width-xsmall {
   text-transform: uppercase;
   transition: 0.1s ease-in-out;
   transition-property: color, background-color, border-color;
+  border-radius: 5px;
 }
 .uk-button:not(:disabled) {
   cursor: pointer;
