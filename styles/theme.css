@@ -12161,7 +12161,6 @@ iframe.uk-cover {
 .uk-comment .uk-comment-body {
   position: relative;
   padding-left: 70px;
-  background-color: #f5f9fc;
 }
 .uk-comment .uk-comment-body > div {
   position: relative;
@@ -12175,6 +12174,11 @@ iframe.uk-cover {
 }
 .uk-comment .tm-indicator-selected.tm-indicator-active {
   opacity: 1;
+}
+.tm-comment-edit {
+  position: absolute;
+  top: 20px;
+  left: 0;
 }
 .uk-comment.uk-comment-primary .uk-comment-header {
   justify-content: flex-end;
