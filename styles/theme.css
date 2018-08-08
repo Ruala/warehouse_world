@@ -11963,13 +11963,21 @@ iframe.uk-cover {
 .tm-toggle {
   display: block;
   position: relative;
+  z-index: 1;
+  padding-right: 40px;
 }
 .tm-toggle::after {
   content: '\f078';
   display: block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: auto;
+  height: auto;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   background: none;
+  transform: translateY(-50%);
 }
 .uk-open > .tm-toggle::after {
   content: '\f077';
