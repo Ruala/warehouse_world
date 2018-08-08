@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Title</title>
+
+    <meta name="description" content="Химчистка мебели">
+    <meta name="keywords" content="химчистка, мебель">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./node_modules/select2/dist/css/select2.css">
+
+    <link rel="stylesheet" href="styles/theme.css">
+
+</head>
+<body>
+
+<div class="uk-offcanvas-content">
+    <div class="uk-child-width-1-1 uk-height-viewport uk-flex uk-flex-wrap uk-flex-wrap-between">
+        <div>
+            <header class=""></header>
+
+            <div class="tm-contetnt-wrap uk-padding-large uk-padding-remove-horizontal">
+                <div class="uk-container uk-container-expand uk-position-relative">
+                    <div uk-grid>
+                        <!--left sidebar-->
+                        <aside class="uk-width-medium">left sidebar</aside>
+
+                        <!--main side-->
+                        <div class="uk-width-expand">
+                            <div class="uk-container">
+
+                                <a class="uk-button uk-button-default" href="#modal-messages" uk-toggle>Открыть сообщения</a>
+
+                                <div id="modal-messages" class="uk-flex-top" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+                                        <div class="uk-child-width-expand uk-flex uk-flex-stretch">
+                                            <div class="uk-width-medium">
+
+
+                                                <div class="uk-child-width-expand uk-grid-small uk-flex-middle"
+                                                     uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <img src="http://via.placeholder.com/50x50" alt=""
+                                                             class="tm-border-dribble">
+                                                        <div class="uk-flex uk-flex-middle">
+                                                            <div class="uk-margin-small-right uk-text-muted">
+                                                                <i class="fas fa-star"></i>
+                                                            </div>
+                                                            <div>97%</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="uk-text-left">
+                                                        <a href="" class="uk-h5 tm-text-medium uk-margin-remove">Складологистик</a>
+                                                        <div class="tm-text-medium uk-text-muted">Ольга Егорова</div>
+                                                        <div class="uk-margin-small-top uk-flex uk-flex-middle">
+                                                            <ul class="uk-iconnav uk-flex-right uk-margin-small-right">
+                                                                <li>
+                                                                    <a href="" class="uk-border-circle">
+                                                                        <img src="images/icons/speech-bubble.png">
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="" class="uk-border-circle">
+                                                                        <img src="images/icons/speech-bubble.png">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <a href=""
+                                                               class="tm-border-rounded uk-button uk-flex uk-flex-middle">
+                                                                <img src="images/icons/speech-bubble.png"
+                                                                     class="uk-margin-small-right">
+                                                                <span>Откликнуться</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--right sidebar-->
+                        <aside class="uk-width-medium">right sidebar</aside>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="uk-section"></footer>
+    </div>
+
+
+    <div id="offcanvas-overlay" uk-offcanvas="mode: push; overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <div class="uk-card uk-flex uk-flex-center uk-margin-large-top">
+                <ul class="uk-nav">
+                    <li>
+                        <a href="index.html" class="uk-active"><span>Главная</span></a>
+                    </li>
+
+                    <li>
+                        <a href="services.html"><span>Услуги</span></a>
+                    </li>
+
+                    <li>
+                        <a href="prices.html"><span>Цены</span></a>
+                    </li>
+
+                    <li>
+                        <a href="about.html"><span>О нас</span></a>
+                    </li>
+
+                    <li>
+                        <a href="contacts.html"><span>Контакты и оплата</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.js"></script>
+<script src="node_modules/select2/dist/js/select2.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
