@@ -5732,6 +5732,7 @@ ul.uk-nav-sub {
 .uk-iconnav > * > a:focus {
   color: #1f2833;
   outline: none;
+  color: #059fdb;
 }
 /* Active */
 .uk-iconnav > .uk-active > a {
