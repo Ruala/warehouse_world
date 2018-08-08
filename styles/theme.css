@@ -12138,6 +12138,15 @@ iframe.uk-cover {
   background-color: #fbfbfb;
   border: solid 1px #ccc;
 }
+.tm-indicator-primary {
+  color: #6c94c9;
+}
+.tm-indicator-off {
+  color: #ccc;
+}
+.tm-muted-background {
+  background-color: #616e7d;
+}
 .select2-container--default .select2-selection--single {
   background-color: #f5f5f5;
   border: 1px solid rgba(97, 110, 125, 0.35);
