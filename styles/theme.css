@@ -4979,7 +4979,7 @@ ul.uk-nav-sub {
   /* 2 */
   box-sizing: border-box;
   margin: 0 auto;
-  width: 600px;
+  width: 1200px;
   /* 3 */
   max-width: calc(100% - 0.01px) !important;
   /* 4 */
@@ -12105,12 +12105,15 @@ iframe.uk-cover {
 .tm-border {
   border: solid 1px grey;
 }
-.tm-green-dot {
+.tm-dot {
   position: absolute;
   top: -3px;
   right: -3px;
   width: 10px;
   height: 10px;
+  background-color: #616e7d;
+}
+.tm-online {
   background-color: #75bc40;
 }
 .select2-container--default .select2-selection--single {
