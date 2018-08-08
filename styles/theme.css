@@ -11997,6 +11997,16 @@ iframe.uk-cover {
   content: '\f077';
   background: none;
 }
+.tm-toggle-notice {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  padding: 5px;
+}
+.tm-toggle-notice::after {
+  position: static;
+  transform: none;
+}
 .tm-round {
   width: 34px;
   height: 34px;
