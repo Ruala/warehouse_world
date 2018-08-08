@@ -859,6 +859,9 @@ a.uk-link-reset:hover,
 .uk-table.tm-table-bordered td {
   border: solid 1px #ccc;
 }
+.uk-table.tm-table-thaligntop th {
+  vertical-align: top;
+}
 /* Add margin if adjacent element */
 * + .uk-table {
   margin-top: 20px;
@@ -11998,6 +12001,9 @@ iframe.uk-cover {
   width: 34px;
   height: 34px;
   border: 1px solid #1f2833;
+}
+.tm-text-global {
+  font-size: 16px;
 }
 .tm-text-medium {
   font-size: 18px;
