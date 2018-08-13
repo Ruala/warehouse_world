@@ -366,13 +366,17 @@
       .tm-indicator-selected {
         opacity: 0.3;
         color: #6c94c9;
-
-        &.tm-indicator-active {
-          opacity: 1;
-          color: #059fdb;
-        }
       }
     }
+
+     &.et-active {
+
+      .tm-indicator-selected {
+        opacity: 1;
+        color: #059fdb;
+      }
+    }
+
   }
 
   .tm-indicator-selected {
@@ -435,6 +439,7 @@
 }
 
 .tm-comment-edit {
+  display: none;
   position: absolute;
   top: 20px;
   left: 0;

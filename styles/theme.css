@@ -12215,7 +12215,7 @@ iframe.uk-cover {
   opacity: 0.3;
   color: #6c94c9;
 }
-.uk-comment .uk-comment-body:hover .tm-indicator-selected.tm-indicator-active {
+.uk-comment .uk-comment-body.et-active .tm-indicator-selected {
   opacity: 1;
   color: #059fdb;
 }
@@ -12259,6 +12259,7 @@ iframe.uk-cover {
   background-color: #faf5f5;
 }
 .tm-comment-edit {
+  display: none;
   position: absolute;
   top: 20px;
   left: 0;
