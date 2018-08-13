@@ -12256,6 +12256,7 @@ iframe.uk-cover {
   display: block;
 }
 .tm-bar-chart {
+  width: 100%;
   height: 400px;
 }
 .select2-container--default .select2-selection--single {
