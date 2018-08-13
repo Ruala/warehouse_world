@@ -46,43 +46,117 @@ $(document).ready(function () {
         }
     })();
 
-    /*custom toggler class*/
-    // (function () {
-    //     const $togglers = $('[uk-toggle]');
-    //
-    //     $togglers.each(function () {
-    //         const $toggler = $(this);
-    //         const selector = $toggler.attr('href') && $toggler.attr('href').length > 2 ?
-    //             $toggler.attr('href') :
-    //             getSelector($toggler.attr('uk-toggle'));
-    //         const $target = $(selector);
-    //
-    //         $target.on({
-    //             'beforeshow': function () {
-    //                 $toggler.addClass('uk-active');
-    //             },
-    //             'hidden': function () {
-    //                 $toggler.removeClass('uk-active');
-    //             }
-    //         });
-    //     });
-    //
-    //     function getSelector(str) {
-    //         const start = 'target: ';
-    //         const end = ';';
-    //
-    //         if (!~str.indexOf(start)) return null;
-    //
-    //         const startPos = str.indexOf(start) + start.length;
-    //         let endPos = ~str.indexOf(end, startPos) ? str.indexOf(end, startPos) : undefined;
-    //
-    //         return str.slice(startPos, endPos);
-    //     }
-    // })();
+    /*element togglers*/
+    (function () {
+        /*toggler simple*/
+        (function() {
+            var $toggler = $('.js__et', context);
+            var options = {};
+
+            $toggler.once(function () {
+                $(this).jElementToggler(options);
+            });
+        })();
+
+        /*toggler no animate*/
+        (function() {
+            var $toggler = $('.js__et-na', context);
+            var options = {
+                animation: 'none'
+            };
+
+            $toggler.once(function () {
+                $(this).jElementToggler(options);
+            });
+        })();
+
+        /*toggler fade*/
+        (function() {
+            var $toggler = $('.js__et-fa', context);
+            var options = {
+                animation: 'fade'
+            };
+
+            $toggler.once(function () {
+                $(this).jElementToggler(options);
+            });
+        })();
+
+        /*toggler slide*/
+        (function() {
+            var $toggler = $('.js__et-sla', context);
+            var options = {
+                animation: 'slide'
+            };
+
+            $toggler.once(function () {
+                $(this).jElementToggler(options);
+            });
+        })();
+
+        /*toggler simple parent lvl 1*/
+        (function() {
+            var $toggler = $('.js__et-p1', context);
+            var options = {
+                getTarget: function ($btn) {
+                    return $btn.parent().find($btn.attr('data-et-target') || $btn.attr('href'));
+                }
+            };
+
+            $toggler.once(function () {
+                $(this).jElementToggler(options);
+            });
+        })();
+
+        /*toggler no animate  parent lvl 1*/
+        (function() {
+            var $toggler = $('.js__et-na-p1', context);
+            var options = {
+                getTarget: function ($btn) {
+                    return $btn.parent().find($btn.attr('data-et-target') || $btn.attr('href'));
+                },
+                animation: 'none'
+            };
+
+            $toggler.once(function () {
+                $(this).jElementToggler(options);
+            });
+        })();
+
+        /*toggler fade  parent lvl 1*/
+        (function() {
+            var $toggler = $('.js__et-fa-p1', context);
+            var options = {
+                getTarget: function ($btn) {
+                    return $btn.parent().find($btn.attr('data-et-target') || $btn.attr('href'));
+                },
+                animation: 'fade'
+            };
+
+            $toggler.once(function () {
+                $(this).jElementToggler(options);
+            });
+        })();
+
+        /*toggler slide  parent lvl 1*/
+        (function() {
+            var $toggler = $('.js__et-sla-p1', context);
+            var options = {
+                getTarget: function ($btn) {
+                    return $btn.parent().find($btn.attr('data-et-target') || $btn.attr('href'));
+                },
+                animation: 'slide'
+            };
+
+            $toggler.once(function () {
+                $(this).jElementToggler(options);
+            });
+        })();
+    })();
 
     /*table togglers*/
     (function () {
-        const $tables = $('.tm-table-sort');
+        const $tables = $('.js__et-table');
 
         $tables.each(function (el, i) {
             const $table = $(this);
@@ -92,7 +166,7 @@ $(document).ready(function () {
                 groupName: 'table-togglers-' + i,
             };
 
-            $rows.elementToggler(options);
+            $rows.jElementToggler(options);
         });
     })();
 
