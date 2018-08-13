@@ -50,67 +50,57 @@ $(document).ready(function () {
     (function () {
         /*toggler simple*/
         (function() {
-            var $toggler = $('.js__et', context);
+            var $toggler = $('.js__et');
             var options = {};
 
-            $toggler.once(function () {
-                $(this).jElementToggler(options);
-            });
+            $toggler.jElementToggler(options);
         })();
 
         /*toggler no animate*/
         (function() {
-            var $toggler = $('.js__et-na', context);
+            var $toggler = $('.js__et-na');
             var options = {
                 animation: 'none'
             };
 
-            $toggler.once(function () {
-                $(this).jElementToggler(options);
-            });
+            $toggler.jElementToggler(options);
         })();
 
         /*toggler fade*/
         (function() {
-            var $toggler = $('.js__et-fa', context);
+            var $toggler = $('.js__et-fa');
             var options = {
                 animation: 'fade'
             };
 
-            $toggler.once(function () {
-                $(this).jElementToggler(options);
-            });
+            $toggler.jElementToggler(options);
         })();
 
         /*toggler slide*/
         (function() {
-            var $toggler = $('.js__et-sla', context);
+            var $toggler = $('.js__et-sla');
             var options = {
                 animation: 'slide'
             };
 
-            $toggler.once(function () {
-                $(this).jElementToggler(options);
-            });
+            $toggler.jElementToggler(options);
         })();
 
         /*toggler simple parent lvl 1*/
         (function() {
-            var $toggler = $('.js__et-p1', context);
+            var $toggler = $('.js__et-p1');
             var options = {
                 getTarget: function ($btn) {
                     return $btn.parent().find($btn.attr('data-et-target') || $btn.attr('href'));
                 }
             };
 
-            $toggler.once(function () {
-                $(this).jElementToggler(options);
-            });
+            $toggler.jElementToggler(options);
         })();
 
         /*toggler no animate  parent lvl 1*/
         (function() {
-            var $toggler = $('.js__et-na-p1', context);
+            var $toggler = $('.js__et-na-p1');
             var options = {
                 getTarget: function ($btn) {
                     return $btn.parent().find($btn.attr('data-et-target') || $btn.attr('href'));
@@ -118,14 +108,12 @@ $(document).ready(function () {
                 animation: 'none'
             };
 
-            $toggler.once(function () {
-                $(this).jElementToggler(options);
-            });
+            $toggler.jElementToggler(options);
         })();
 
         /*toggler fade  parent lvl 1*/
         (function() {
-            var $toggler = $('.js__et-fa-p1', context);
+            var $toggler = $('.js__et-fa-p1');
             var options = {
                 getTarget: function ($btn) {
                     return $btn.parent().find($btn.attr('data-et-target') || $btn.attr('href'));
@@ -133,14 +121,12 @@ $(document).ready(function () {
                 animation: 'fade'
             };
 
-            $toggler.once(function () {
-                $(this).jElementToggler(options);
-            });
+            $toggler.jElementToggler(options);
         })();
 
         /*toggler slide  parent lvl 1*/
         (function() {
-            var $toggler = $('.js__et-sla-p1', context);
+            var $toggler = $('.js__et-sla-p1');
             var options = {
                 getTarget: function ($btn) {
                     return $btn.parent().find($btn.attr('data-et-target') || $btn.attr('href'));
@@ -148,9 +134,7 @@ $(document).ready(function () {
                 animation: 'slide'
             };
 
-            $toggler.once(function () {
-                $(this).jElementToggler(options);
-            });
+            $toggler.jElementToggler(options);
         })();
     })();
 
