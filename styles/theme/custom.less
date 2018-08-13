@@ -333,9 +333,26 @@
 }
 
 .tm-indicator-oblong {
+  position: relative;
   width: 35px;
   height: 10px;
   border-radius: 500px;
+
+  .uk-button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+
+  &:hover {
+
+    .uk-button {
+      display: block;
+    }
+  }
 }
 
 .tm-indicator-oblong-low {
@@ -516,6 +533,23 @@
 
 .tm-dialog-list {
   max-height: 680px;
+  padding: 10px 0;
+
+  li {
+    padding: 10px 0;
+
+    + li {
+      border-top: 1px solid #e0e0e0;
+    }
+
+    &.uk-active {
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+  }
+
+  > li:nth-child(n+2) {
+    margin-top: 0;
+  }
 }
 
 .tm-chat-field {

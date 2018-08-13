@@ -12187,9 +12187,21 @@ iframe.uk-cover {
   background-color: #616e7d;
 }
 .tm-indicator-oblong {
+  position: relative;
   width: 35px;
   height: 10px;
   border-radius: 500px;
+}
+.tm-indicator-oblong .uk-button {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+.tm-indicator-oblong:hover .uk-button {
+  display: block;
 }
 .tm-indicator-oblong-low {
   background-color: #ff8a48;
@@ -12316,6 +12328,19 @@ iframe.uk-cover {
 }
 .tm-dialog-list {
   max-height: 680px;
+  padding: 10px 0;
+}
+.tm-dialog-list li {
+  padding: 10px 0;
+}
+.tm-dialog-list li + li {
+  border-top: 1px solid #e0e0e0;
+}
+.tm-dialog-list li.uk-active {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.tm-dialog-list > li:nth-child(n+2) {
+  margin-top: 0;
 }
 .tm-chat-field {
   max-height: 830px;
