@@ -12091,6 +12091,15 @@ iframe.uk-cover {
   filter: none;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
+.js__et-table .tm-tender-selected {
+  display: none;
+}
+.js__et-table .et-active .tm-tender-selected {
+  display: block;
+}
+.js__et-table .et-active .tm-tender-unselected {
+  display: none;
+}
 .tm-box-shadow {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
@@ -12264,6 +12273,18 @@ iframe.uk-cover {
 }
 .tm-table-sort th {
   padding-bottom: 2px;
+}
+.tm-table-sort .uk-button-text {
+  color: #616e7d;
+}
+.tm-table-sort .uk-button-text::before {
+  display: none;
+}
+.tm-table-sort .tm-filter-min-to-max {
+  color: #1f2833;
+}
+.tm-table-sort .tm-filter-min-to-max .fa-chevron-down:before {
+  content: "\f077";
 }
 .tm-table-min {
   color: #c30909;

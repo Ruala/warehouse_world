@@ -212,6 +212,25 @@
   }
 }
 
+.js__et-table {
+
+  .tm-tender-selected {
+    display: none;
+  }
+
+  .et-active {
+
+    .tm-tender-selected {
+      display: block;
+    }
+
+    .tm-tender-unselected {
+      display: none;
+    }
+  }
+
+}
+
 .tm-box-shadow {
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
@@ -438,6 +457,22 @@
 
   th {
     padding-bottom: 2px;
+  }
+
+  .uk-button-text {
+    color: @global-muted-color;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .tm-filter-min-to-max {
+    color: @global-color;
+
+    .fa-chevron-down:before {
+      content: "\f077";
+    }
   }
 }
 
