@@ -350,6 +350,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
+yuicompressor@^2.4.8:
+  version "2.4.8"
+  resolved "https://registry.yarnpkg.com/yuicompressor/-/yuicompressor-2.4.8.tgz#98d26751f166e3db919b2fe3ea7cf642de998d8b"
+
 zrender@4.0.4:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/zrender/-/zrender-4.0.4.tgz#910e60d888f00c9599073f23758dd23345fe48fd"
