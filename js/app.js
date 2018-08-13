@@ -47,37 +47,53 @@ $(document).ready(function () {
     })();
 
     /*custom toggler class*/
+    // (function () {
+    //     const $togglers = $('[uk-toggle]');
+    //
+    //     $togglers.each(function () {
+    //         const $toggler = $(this);
+    //         const selector = $toggler.attr('href') && $toggler.attr('href').length > 2 ?
+    //             $toggler.attr('href') :
+    //             getSelector($toggler.attr('uk-toggle'));
+    //         const $target = $(selector);
+    //
+    //         $target.on({
+    //             'beforeshow': function () {
+    //                 $toggler.addClass('uk-active');
+    //             },
+    //             'hidden': function () {
+    //                 $toggler.removeClass('uk-active');
+    //             }
+    //         });
+    //     });
+    //
+    //     function getSelector(str) {
+    //         const start = 'target: ';
+    //         const end = ';';
+    //
+    //         if (!~str.indexOf(start)) return null;
+    //
+    //         const startPos = str.indexOf(start) + start.length;
+    //         let endPos = ~str.indexOf(end, startPos) ? str.indexOf(end, startPos) : undefined;
+    //
+    //         return str.slice(startPos, endPos);
+    //     }
+    // })();
+
+    /*table togglers*/
     (function () {
-        const $togglers = $('[uk-toggle]');
+        const $tables = $('.tm-table-sort');
 
-        $togglers.each(function () {
-            const $toggler = $(this);
-            const selector = $toggler.attr('href') && $toggler.attr('href').length > 2 ?
-                $toggler.attr('href') :
-                getSelector($toggler.attr('uk-toggle'));
-            const $target = $(selector);
+        $tables.each(function (el, i) {
+            const $table = $(this);
+            const $rows = $table.find('tbody > tr');
+            const options = {
+                animation: 'none',
+                groupName: 'table-togglers-' + i,
+            };
 
-            $target.on({
-                'beforeshow': function () {
-                    $toggler.addClass('uk-active');
-                },
-                'hidden': function () {
-                    $toggler.removeClass('uk-active');
-                }
-            });
+            $rows.elementToggler(options);
         });
-
-        function getSelector(str) {
-            const start = 'target: ';
-            const end = ';';
-
-            if (!~str.indexOf(start)) return null;
-
-            const startPos = str.indexOf(start) + start.length;
-            let endPos = ~str.indexOf(end, startPos) ? str.indexOf(end, startPos) : undefined;
-
-            return str.slice(startPos, endPos);
-        }
     })();
 
     /*sort*/
@@ -153,11 +169,11 @@ $(document).ready(function () {
                         left: 'right',
                         top: 'center',
                         feature: {
-                            mark: { show: true },
-                            dataView: { show: true, readOnly: false },
-                            magicType: { show: true, type: ['line', 'bar', 'stack', 'tiled'] },
-                            restore: { show: true },
-                            saveAsImage: { show: true },
+                            mark: {show: true},
+                            dataView: {show: true, readOnly: false},
+                            magicType: {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                            restore: {show: true},
+                            saveAsImage: {show: true},
                         },
                     },
                     xAxis: {
