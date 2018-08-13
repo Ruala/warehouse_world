@@ -423,11 +423,11 @@
 .tm-tender-subnav {
   display: none;
   padding-right: 40px;
-  margin-top: -35px;
 
-  a, button {
+  .uk-button {
     position: relative;
     z-index: 2;
+    margin-top: -35px;
   }
 
   .uk-open & {
@@ -438,6 +438,10 @@
 .tm-bar-chart {
   width: 100%;
   height: 400px;
+}
+
+.tm-min-width-medium {
+  min-width: 300px;
 }
 
 //Warning! Select2 section!!!
@@ -504,3 +508,10 @@
 }
 
 //End of Select2 section!
+
+@media (max-width: 639px) {
+
+  .tm-tender-subnav .uk-button {
+    margin-top: 0;
+  }
+}
