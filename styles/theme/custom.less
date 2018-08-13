@@ -328,19 +328,22 @@
 }
 
 .uk-comment {
+  padding: 0 70px;
 
   .uk-comment-body {
     position: relative;
-    padding-left: 70px;
+    margin-bottom: 30px;
 
     > div {
+      display: inline-block;
       position: relative;
       background-color: #f5f9fc;
-      padding: 20px;
+      padding: 20px 40px 20px 20px;
       border-radius: 5px;
     }
 
     &:hover {
+
       .tm-indicator-selected {
         opacity: 0.3;
         color: #6c94c9;
@@ -356,9 +359,10 @@
   .tm-indicator-selected {
     position: absolute;
     top: 5px;
-    left: 10px;
+    left: -60px;
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
+    font-size: 34px;
 
     &.tm-indicator-active {
       opacity: 1;
@@ -366,11 +370,46 @@
     }
   }
 
+  .tm-indicator-status {
+    color: @global-success-background;
+  }
+
+  .tm-status-text {
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    font-size: 12px;
+  }
+
   &.tm-status-error {
+
     .uk-comment-body {
 
       > div {
         border: solid 1px @global-danger-background;
+      }
+    }
+
+    .tm-indicator-status {
+      color: @global-danger-background;
+    }
+  }
+
+   &.uk-comment-primary {
+
+    .uk-comment-header {
+      justify-content: flex-end;
+    }
+
+    .uk-comment-body {
+      text-align: right;
+
+      > * {
+        text-align: left;
+      }
+
+      > div {
+        background-color: #faf5f5;
       }
     }
   }
@@ -380,20 +419,6 @@
   position: absolute;
   top: 20px;
   left: 0;
-}
-
-.uk-comment.uk-comment-primary {
-
-  .uk-comment-header {
-    justify-content: flex-end;
-  }
-
-  .uk-comment-body {
-
-    > div {
-      background-color: #faf5f5;
-    }
-  }
 }
 
 .tm-hover-light {
@@ -442,6 +467,19 @@
 
 .tm-min-width-medium {
   min-width: 300px;
+}
+
+.tm-dialog-list, .tm-chat-field {
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.tm-dialog-list {
+  max-height: 680px;
+}
+
+.tm-chat-field {
+  max-height: 830px;
 }
 
 //Warning! Select2 section!!!

@@ -80,7 +80,7 @@
                                                                placeholder="Поиск...">
                                                     </form>
                                                     <hr class="uk-margin-remove">
-                                                    <ul class="tm-dialog-list uk-list uk-padding-small">
+                                                    <ul class="tm-dialog-list uk-list uk-list-divider uk-margin-remove-bottom" uk-switcher="connect: #tm-chat-switcher; animation: uk-animation-fade">
                                                         <li>
                                                             <div class="uk-child-width-expand" uk-grid>
                                                                 <div>
@@ -118,7 +118,6 @@
                                                                 </div>
                                                             </div>
                                                         </li>
-                                                        <hr class="uk-margin-small">
                                                         <li>
                                                             <div class="uk-child-width-expand" uk-grid>
                                                                 <div>
@@ -161,241 +160,586 @@
                                                 </div>
                                             </div>
 
-                                            <div class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between uk-position-relative">
-                                                <div class="uk-padding-small">
-                                                    <div class="uk-flex-between" uk-grid>
-                                                        <div>
-                                                            <div class="uk-flex uk-flex-middle uk-text-primary">
-                                                                <i class="fas fa-pencil-alt uk-margin-small-right"></i>
-                                                                <span>Печатает</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="uk-text-center">
-                                                            <h4 class="uk-margin-remove">Мария Ивановна</h4>
-                                                            <div class="tm-status uk-text-primary">online</div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="uk-inline">
-                                                                <div class="uk-text-muted uk-margin-medium-right">
-                                                                    <i class="tm-hover-light fas fa-cog"></i>
-                                                                </div>
-                                                                <div uk-dropdown="mode: click">
-                                                                    <ul class="uk-nav uk-nav-default uk-dropdown-nav">
-                                                                        <li>
-                                                                            <a href="#"><i class="fas fa-bookmark uk-margin-small-right"></i> Добавить в избранное</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="#"><i class="fas fa-users uk-margin-small-right"></i> Добавить в группу</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="#"><i class="fas fa-pencil-alt uk-margin-small-right"></i> Присвоить тег</a>
-                                                                        </li>
-                                                                        <li class="uk-nav-divider"></li>
-                                                                         <li>
-                                                                            <a href="#"><i class="fas fa-paperclip uk-margin-small-right"></i> Показать вложение</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="#"><i class="fas fa-thumbtack uk-margin-small-right"></i> Закрепить</a>
-                                                                        </li>
-                                                                        <li class="uk-nav-divider"></li>
-                                                                        <li>
-                                                                            <a href="#"><i class="fas fa-volume-up uk-margin-small-right"></i> Отключить уведомление</a>
-                                                                        </li>
-                                                                        <li class="uk-nav-divider"></li>
-                                                                        <li>
-                                                                            <a href="#"><i class="far fa-file uk-margin-small-right"></i> Переместить в архив</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="#"><i class="fas fa-times uk-margin-small-right"></i> Очистить все сообщения</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="#"><i class="fas fa-lock uk-margin-small-right"></i> Заблокировать</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="#"><i class="far fa-trash-alt uk-margin-small-right"></i> Удалить контакт</a>
-                                                                        </li>
-                                                                        <li class="uk-nav-divider"></li>
-                                                                        <li>
-                                                                            <a href="#"><i class="fas fa-ban uk-margin-small-right"></i> Пожаловаться</a>
-                                                                        </li>
-                                                                    </ul>
+                                            <ul id="tm-chat-switcher" class="uk-switcher uk-child-width-1-1 uk-flex uk-flex-stretch">
+                                                <li class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between uk-position-relative">
+                                                    <div class="tm-chat-field uk-padding-small">
+                                                        <div class="uk-flex-between" uk-grid>
+                                                            <div>
+                                                                <div class="uk-flex uk-flex-middle uk-text-primary">
+                                                                    <i class="fas fa-pencil-alt uk-margin-small-right"></i>
+                                                                    <span>Печатает</span>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <hr>
-                                                    <div id="tm-comment-group" class="tm-comment-group uk-flex uk-flex-between uk-flex-middle">
-                                                        <div>
-                                                            <div class="uk-grid-small" uk-grid>
-                                                                <div>
-                                                                    <img src="images/blond-olga-small.png" alt="" class="tm-border-dribble" uk-tooltip="title: Марина Петрова; pos: bottom"">
-                                                                </div>
-                                                                <div>
-                                                                    <img src="images/blond-olga-small.png" alt="" class="tm-border-dribble" uk-tooltip="title: Марина Петрова; pos: bottom"">
-                                                                </div>
-                                                                <div>
-                                                                    <img src="images/blond-olga-small.png" alt="" class="tm-border-dribble" uk-tooltip="title: Марина Петрова; pos: bottom"">
-                                                                </div>
-                                                                <div>
-                                                                    <img src="images/blond-olga-small.png" alt="" class="tm-border-dribble" uk-tooltip="title: Марина Петрова; pos: bottom"">
-                                                                </div>
-                                                                <div>
-                                                                    <img src="images/blond-olga-small.png" alt="" class="tm-border-dribble" uk-tooltip="title: Марина Петрова; pos: bottom"">
+                                                            <div class="uk-text-center">
+                                                                <h4 class="uk-margin-remove">Склад 107</h4>
+                                                                <div class="tm-status uk-text-primary"><span>5</span> участников</div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="uk-inline">
+                                                                    <div class="uk-text-muted uk-margin-medium-right">
+                                                                        <i class="tm-hover-light fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div uk-dropdown="mode: click">
+                                                                        <ul class="uk-nav uk-nav-default uk-dropdown-nav">
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="fas fa-bookmark uk-margin-small-right"></i>
+                                                                                    Добавить в избранное</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="fas fa-users uk-margin-small-right"></i>
+                                                                                    Добавить в группу</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="fas fa-pencil-alt uk-margin-small-right"></i>
+                                                                                    Присвоить тег</a>
+                                                                            </li>
+                                                                            <li class="uk-nav-divider"></li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="fas fa-paperclip uk-margin-small-right"></i>
+                                                                                    Показать вложение</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="fas fa-thumbtack uk-margin-small-right"></i>
+                                                                                    Закрепить</a>
+                                                                            </li>
+                                                                            <li class="uk-nav-divider"></li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="fas fa-volume-up uk-margin-small-right"></i>
+                                                                                    Отключить уведомление</a>
+                                                                            </li>
+                                                                            <li class="uk-nav-divider"></li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="far fa-file uk-margin-small-right"></i>
+                                                                                    Переместить в архив</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="fas fa-times uk-margin-small-right"></i>
+                                                                                    Очистить все сообщения</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="fas fa-lock uk-margin-small-right"></i>
+                                                                                    Заблокировать</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="far fa-trash-alt uk-margin-small-right"></i>
+                                                                                    Удалить контакт</a>
+                                                                            </li>
+                                                                            <li class="uk-nav-divider"></li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="fas fa-ban uk-margin-small-right"></i>
+                                                                                    Пожаловаться</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div uk-toggle="target: #tm-comment-group">
-                                                            <i class="fas fa-times"></i>
-                                                        </div>
-                                                    </div>
-                                                    <ul class="uk-comment-list">
-                                                        <li>
-                                                            <article class="uk-comment">
-                                                                <header class="uk-comment-header uk-grid-small uk-flex-middle" uk-grid>
+                                                        <hr>
+                                                        <div id="tm-comment-group"
+                                                             class="tm-comment-group uk-flex uk-flex-between uk-flex-middle">
+                                                            <div>
+                                                                <div class="uk-grid-small" uk-grid>
                                                                     <div>
-                                                                        <h4 class="uk-comment-title">Мария</h4>
+                                                                        <img src="images/blond-olga-small.png" alt=""
+                                                                             class="tm-border-dribble"
+                                                                             uk-tooltip="title: Марина Петрова; pos: bottom">
                                                                     </div>
-                                                                    <div class="uk-comment-meta">10:00</div>
-                                                                </header>
-                                                                <div class="uk-comment-body" uk-toggle="target: #tm-comment-edit">
-                                                                    <i class="tm-indicator-selected fas fa-check-circle"></i>
                                                                     <div>
-                                                                        Склад холодный 300м 2, высота около 7м, подъезд с двух сторон,
-                                                                        двое ворот для заезда и калитка, освещение, возможно
-                                                                        оборудовать под отптовый магазин, возможно
+                                                                        <img src="images/blond-olga-small.png" alt=""
+                                                                             class="tm-border-dribble"
+                                                                             uk-tooltip="title: Марина Петрова; pos: bottom">
+                                                                    </div>
+                                                                    <div>
+                                                                        <img src="images/blond-olga-small.png" alt=""
+                                                                             class="tm-border-dribble"
+                                                                             uk-tooltip="title: Марина Петрова; pos: bottom">
+                                                                    </div>
+                                                                    <div>
+                                                                        <img src="images/blond-olga-small.png" alt=""
+                                                                             class="tm-border-dribble"
+                                                                             uk-tooltip="title: Марина Петрова; pos: bottom">
+                                                                    </div>
+                                                                    <div>
+                                                                        <img src="images/blond-olga-small.png" alt=""
+                                                                             class="tm-border-dribble"
+                                                                             uk-tooltip="title: Марина Петрова; pos: bottom">
                                                                     </div>
                                                                 </div>
-                                                            </article>
-                                                        </li>
-
-                                                        <li>
-                                                            <article class="tm-status-succes uk-comment uk-comment-primary">
-                                                                <header class="uk-comment-header uk-grid-small uk-flex-middle" uk-grid>
-                                                                    <div>
-                                                                        <h4 class="uk-comment-title">Ольга</h4>
-                                                                    </div>
-                                                                    <div class="uk-comment-meta">10:08</div>
-                                                                </header>
-                                                                <div class="uk-comment-body" uk-toggle="target: > .tm-indicator-selected; cls: tm-indicator-active">
-                                                                    <i class="tm-indicator-selected fas fa-check-circle"></i>
-                                                                    <div>
+                                                            </div>
+                                                            <div uk-toggle="target: #tm-comment-group">
+                                                                <i class="fas fa-times"></i>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="uk-comment-list">
+                                                            <li>
+                                                                <article class="uk-comment">
+                                                                    <header class="uk-comment-header uk-grid-small uk-flex-middle"
+                                                                            uk-grid>
                                                                         <div>
-                                                                            Склад холодный 300м 2, высота около 7м, подъезд с двух сторон,
-                                                                            двое ворот для заезда и калитка, освещение, возможно
+                                                                            <h4 class="uk-comment-title">Мария</h4>
+                                                                        </div>
+                                                                        <div class="uk-comment-meta">10:00</div>
+                                                                    </header>
+                                                                    <div class="uk-comment-body"
+                                                                         uk-toggle="target: #tm-comment-edit">
+                                                                        <i class="tm-indicator-selected fas fa-check-circle"></i>
+                                                                        <div>
+                                                                            Склад холодный 300м 2, высота около 7м,
+                                                                            подъезд с двух сторон,
+                                                                            двое ворот для заезда и калитка, освещение,
+                                                                            возможно
                                                                             оборудовать под отптовый магазин, возможно
                                                                         </div>
-                                                                        <div class="uk-position-small uk-position-bottom-right">
-                                                                            <i class="fas fa-check"></i>
+                                                                    </div>
+                                                                </article>
+                                                            </li>
+
+                                                            <li>
+                                                                <article
+                                                                        class="tm-status-succes uk-comment uk-comment-primary">
+                                                                    <header class="uk-comment-header uk-grid-small uk-flex-middle"
+                                                                            uk-grid>
+                                                                        <div>
+                                                                            <h4 class="uk-comment-title">Ольга</h4>
+                                                                        </div>
+                                                                        <div class="uk-comment-meta">10:08</div>
+                                                                    </header>
+                                                                    <div class="uk-comment-body"
+                                                                         uk-toggle="target: > .tm-indicator-selected; cls: tm-indicator-active">
+                                                                        <i class="tm-indicator-selected fas fa-check-circle"></i>
+                                                                        <div>
+                                                                            <div>
+                                                                                Склад холодный 300м 2, высота около 7м,
+                                                                                подъезд с двух сторон,
+                                                                                двое ворот для заезда и калитка,
+                                                                                освещение, возможно
+                                                                                оборудовать под отптовый магазин,
+                                                                                возможно
+                                                                            </div>
+                                                                            <div class="uk-position-small uk-position-bottom-right">
+                                                                                <i class="tm-indicator-status fas fa-check-double"></i>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                            </article>
-                                                        </li>
+                                                                </article>
+                                                            </li>
 
-                                                        <li>
-                                                            <article class="uk-comment">
-                                                                <header class="uk-comment-header uk-grid-small uk-flex-middle" uk-grid>
-                                                                    <div>
-                                                                        <h4 class="uk-comment-title">Мария</h4>
-                                                                    </div>
-                                                                    <div class="uk-comment-meta">10:12</div>
-                                                                </header>
-                                                                <div class="uk-comment-body" uk-toggle="target: > .tm-indicator-selected; cls: tm-indicator-active">
-                                                                    <i class="tm-indicator-selected fas fa-check-circle"></i>
-                                                                    <div>Ок</div>
-                                                                </div>
-                                                                <div class="uk-comment-body" uk-toggle="target: > .tm-indicator-selected; cls: tm-indicator-active">
-                                                                    <i class="tm-indicator-selected fas fa-check-circle"></i>
-                                                                    <div>
-                                                                        <a href="" class=""><img src="http://via.placeholder.com/110x75" alt=""></a>
-
-                                                                        <img src="http://via.placeholder.com/110x75" alt="">
-                                                                        <img src="http://via.placeholder.com/110x75" alt="">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="uk-comment-body" uk-toggle="target: > .tm-indicator-selected; cls: tm-indicator-active">
-                                                                    <i class="tm-indicator-selected fas fa-check-circle"></i>
-                                                                    <div>...</div>
-                                                                </div>
-                                                            </article>
-                                                        </li>
-
-                                                        <li>
-                                                            <article class="tm-status-error uk-comment uk-comment-primary">
-                                                                <header class="uk-comment-header uk-grid-small uk-flex-middle" uk-grid>
-                                                                    <div>
-                                                                        <h4 class="uk-comment-title">Ольга</h4>
-                                                                    </div>
-                                                                    <div class="uk-comment-meta">10:18</div>
-                                                                </header>
-                                                                <div class="uk-comment-body" uk-toggle="target: > .tm-indicator-selected; cls: tm-indicator-active">
-                                                                    <i class="tm-indicator-selected fas fa-check-circle"></i>
-                                                                    <div>
+                                                            <li>
+                                                                <article class="uk-comment">
+                                                                    <header class="uk-comment-header uk-grid-small uk-flex-middle"
+                                                                            uk-grid>
                                                                         <div>
-                                                                            Склад холодный 300м 2, высота около 7м, подъезд с двух сторон,
-                                                                            двое ворот для заезда и калитка, освещение, возможно
+                                                                            <h4 class="uk-comment-title">Мария</h4>
+                                                                        </div>
+                                                                        <div class="uk-comment-meta">10:12</div>
+                                                                    </header>
+                                                                    <div class="uk-comment-body"
+                                                                         uk-toggle="target: > .tm-indicator-selected; cls: tm-indicator-active">
+                                                                        <i class="tm-indicator-selected fas fa-check-circle"></i>
+                                                                        <div>Ок</div>
+                                                                    </div>
+                                                                    <div class="uk-comment-body"
+                                                                         uk-toggle="target: > .tm-indicator-selected; cls: tm-indicator-active">
+                                                                        <i class="tm-indicator-selected fas fa-check-circle"></i>
+                                                                        <div>
+                                                                            <a href="" class=""><img
+                                                                                    src="http://via.placeholder.com/110x75"
+                                                                                    alt=""></a>
+
+                                                                            <img src="http://via.placeholder.com/110x75"
+                                                                                 alt="">
+                                                                            <img src="http://via.placeholder.com/110x75"
+                                                                                 alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="uk-comment-body"
+                                                                         uk-toggle="target: > .tm-indicator-selected; cls: tm-indicator-active">
+                                                                        <i class="tm-indicator-selected fas fa-check-circle"></i>
+                                                                        <div>...</div>
+                                                                    </div>
+                                                                </article>
+                                                            </li>
+
+                                                            <li>
+                                                                <article
+                                                                        class="tm-status-error uk-comment uk-comment-primary">
+                                                                    <header class="uk-comment-header uk-grid-small uk-flex-middle"
+                                                                            uk-grid>
+                                                                        <div>
+                                                                            <h4 class="uk-comment-title">Ольга</h4>
+                                                                        </div>
+                                                                        <div class="uk-comment-meta">10:18</div>
+                                                                    </header>
+                                                                    <div class="uk-comment-body"
+                                                                         uk-toggle="target: > .tm-indicator-selected; cls: tm-indicator-active">
+                                                                        <i class="tm-indicator-selected fas fa-check-circle"></i>
+                                                                        <div>
+                                                                            <div>
+                                                                                Склад холодный 300м 2, высота около 7м,
+                                                                                подъезд с двух сторон,
+                                                                                двое ворот для заезда и калитка,
+                                                                                освещение, возможно
+                                                                                оборудовать под отптовый магазин,
+                                                                                возможно
+                                                                            </div>
+                                                                            <div class="uk-position-small uk-position-bottom-right">
+                                                                                <i class="tm-indicator-status fas fa-check-double"></i>
+                                                                            </div>
+                                                                            <div class="tm-status-text uk-text-danger">
+                                                                                Сообщение не отправлено
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </article>
+                                                            </li>
+
+                                                            <li>
+                                                                <div class="uk-text-center uk-text-muted">Сообщение
+                                                                    удалено
+                                                                </div>
+                                                            </li>
+
+
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="uk-padding-small uk-background-muted uk-text-muted">
+                                                        <div class="uk-child-width-auto uk-flex-middle" uk-grid>
+                                                            <div>
+                                                                <i class="fas fa-paperclip"></i>
+                                                            </div>
+                                                            <div class="uk-width-expand">
+                                                                <input class="uk-input" type="text"
+                                                                       placeholder="Строчка начала сообщения..">
+                                                            </div>
+                                                            <div>
+                                                                <buttom class="uk-button uk-button-default">
+                                                                    <i class="fas fa-paper-plane"></i>
+                                                                </buttom>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div id="tm-comment-edit" class="tm-comment-edit" hidden>
+                                                        <div class="uk-flex uk-flex-between uk-flex-middle">
+                                                            <div class="uk-flex uk-flex-middle">
+                                                                <div>2 сообщения</div>
+                                                                <a href="" class=""><i
+                                                                        class="fas fa-times uk-margin-small-left"></i></a>
+                                                            </div>
+
+                                                            <div>
+                                                                <ul class="uk-iconnav">
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           uk-tooltip="title: Переслать; pos: bottom"><i
+                                                                                class="far fa-file"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           uk-tooltip="title: Копировать; pos: bottom"><i
+                                                                                class="fas fa-share"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           uk-tooltip="title: Поделиться; pos: bottom"><i
+                                                                                class="fas fa-share-alt"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           uk-tooltip="title: Удалить; pos: bottom"><i
+                                                                                class="fas fa-trash-alt"></i></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between uk-position-relative">
+                                                    <div class="uk-padding-small">
+                                                        <div class="uk-flex-between" uk-grid>
+                                                            <div>
+                                                                <div class="uk-flex uk-flex-middle uk-text-primary">
+                                                                    <i class="fas fa-pencil-alt uk-margin-small-right"></i>
+                                                                    <span>Печатает</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="uk-text-center">
+                                                                <h4 class="uk-margin-remove">Мария Ивановна</h4>
+                                                                <div class="tm-status uk-text-primary">online</div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="uk-inline">
+                                                                    <div class="uk-text-muted uk-margin-medium-right">
+                                                                        <i class="tm-hover-light fas fa-cog"></i>
+                                                                    </div>
+                                                                    <div uk-dropdown="mode: click">
+                                                                        <ul class="uk-nav uk-nav-default uk-dropdown-nav">
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="fas fa-bookmark uk-margin-small-right"></i>
+                                                                                    Добавить в избранное</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="fas fa-users uk-margin-small-right"></i>
+                                                                                    Добавить в группу</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="fas fa-pencil-alt uk-margin-small-right"></i>
+                                                                                    Присвоить тег</a>
+                                                                            </li>
+                                                                            <li class="uk-nav-divider"></li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="fas fa-paperclip uk-margin-small-right"></i>
+                                                                                    Показать вложение</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="fas fa-thumbtack uk-margin-small-right"></i>
+                                                                                    Закрепить</a>
+                                                                            </li>
+                                                                            <li class="uk-nav-divider"></li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="fas fa-volume-up uk-margin-small-right"></i>
+                                                                                    Отключить уведомление</a>
+                                                                            </li>
+                                                                            <li class="uk-nav-divider"></li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="far fa-file uk-margin-small-right"></i>
+                                                                                    Переместить в архив</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="fas fa-times uk-margin-small-right"></i>
+                                                                                    Очистить все сообщения</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="fas fa-lock uk-margin-small-right"></i>
+                                                                                    Заблокировать</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="far fa-trash-alt uk-margin-small-right"></i>
+                                                                                    Удалить контакт</a>
+                                                                            </li>
+                                                                            <li class="uk-nav-divider"></li>
+                                                                            <li>
+                                                                                <a href="#"><i
+                                                                                        class="fas fa-ban uk-margin-small-right"></i>
+                                                                                    Пожаловаться</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <ul class="uk-comment-list">
+                                                            <li>
+                                                                <article class="uk-comment">
+                                                                    <header class="uk-comment-header uk-grid-small uk-flex-middle"
+                                                                            uk-grid>
+                                                                        <div>
+                                                                            <h4 class="uk-comment-title">Мария</h4>
+                                                                        </div>
+                                                                        <div class="uk-comment-meta">10:00</div>
+                                                                    </header>
+                                                                    <div class="uk-comment-body"
+                                                                         uk-toggle="target: #tm-comment-edit-2">
+                                                                        <i class="tm-indicator-selected fas fa-check-circle"></i>
+                                                                        <div>
+                                                                            Склад холодный 300м 2, высота около 7м,
+                                                                            подъезд с двух сторон,
+                                                                            двое ворот для заезда и калитка, освещение,
+                                                                            возможно
                                                                             оборудовать под отптовый магазин, возможно
                                                                         </div>
-                                                                        <div class="uk-position-small uk-position-bottom-right">
-                                                                            <i class="fas fa-check"></i>
+                                                                    </div>
+                                                                </article>
+                                                            </li>
+
+                                                            <li>
+                                                                <article
+                                                                        class="tm-status-succes uk-comment uk-comment-primary">
+                                                                    <header class="uk-comment-header uk-grid-small uk-flex-middle"
+                                                                            uk-grid>
+                                                                        <div>
+                                                                            <h4 class="uk-comment-title">Ольга</h4>
+                                                                        </div>
+                                                                        <div class="uk-comment-meta">10:08</div>
+                                                                    </header>
+                                                                    <div class="uk-comment-body"
+                                                                         uk-toggle="target: > .tm-indicator-selected; cls: tm-indicator-active">
+                                                                        <i class="tm-indicator-selected fas fa-check-circle"></i>
+                                                                        <div>
+                                                                            <div>
+                                                                                Склад холодный 300м 2, высота около 7м,
+                                                                                подъезд с двух сторон,
+                                                                                двое ворот для заезда и калитка,
+                                                                                освещение, возможно
+                                                                                оборудовать под отптовый магазин,
+                                                                                возможно
+                                                                            </div>
+                                                                            <div class="uk-position-small uk-position-bottom-right">
+                                                                                <i class="tm-indicator-status fas fa-check-double"></i>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
+                                                                </article>
+                                                            </li>
+
+                                                            <li>
+                                                                <article class="uk-comment">
+                                                                    <header class="uk-comment-header uk-grid-small uk-flex-middle"
+                                                                            uk-grid>
+                                                                        <div>
+                                                                            <h4 class="uk-comment-title">Мария</h4>
+                                                                        </div>
+                                                                        <div class="uk-comment-meta">10:12</div>
+                                                                    </header>
+                                                                    <div class="uk-comment-body"
+                                                                         uk-toggle="target: > .tm-indicator-selected; cls: tm-indicator-active">
+                                                                        <i class="tm-indicator-selected fas fa-check-circle"></i>
+                                                                        <div>Ок</div>
+                                                                    </div>
+                                                                    <div class="uk-comment-body"
+                                                                         uk-toggle="target: > .tm-indicator-selected; cls: tm-indicator-active">
+                                                                        <i class="tm-indicator-selected fas fa-check-circle"></i>
+                                                                        <div>
+                                                                            <a href="" class=""><img
+                                                                                    src="http://via.placeholder.com/110x75"
+                                                                                    alt=""></a>
+
+                                                                            <img src="http://via.placeholder.com/110x75"
+                                                                                 alt="">
+                                                                            <img src="http://via.placeholder.com/110x75"
+                                                                                 alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="uk-comment-body"
+                                                                         uk-toggle="target: > .tm-indicator-selected; cls: tm-indicator-active">
+                                                                        <i class="tm-indicator-selected fas fa-check-circle"></i>
+                                                                        <div>...</div>
+                                                                    </div>
+                                                                </article>
+                                                            </li>
+
+                                                            <li>
+                                                                <article
+                                                                        class="tm-status-error uk-comment uk-comment-primary">
+                                                                    <header class="uk-comment-header uk-grid-small uk-flex-middle"
+                                                                            uk-grid>
+                                                                        <div>
+                                                                            <h4 class="uk-comment-title">Ольга</h4>
+                                                                        </div>
+                                                                        <div class="uk-comment-meta">10:18</div>
+                                                                    </header>
+                                                                    <div class="uk-comment-body"
+                                                                         uk-toggle="target: > .tm-indicator-selected; cls: tm-indicator-active">
+                                                                        <i class="tm-indicator-selected fas fa-check-circle"></i>
+                                                                        <div>
+                                                                            <div>
+                                                                                Склад холодный 300м 2, высота около 7м,
+                                                                                подъезд с двух сторон,
+                                                                                двое ворот для заезда и калитка,
+                                                                                освещение, возможно
+                                                                                оборудовать под отптовый магазин,
+                                                                                возможно
+                                                                            </div>
+                                                                            <div class="uk-position-small uk-position-bottom-right">
+                                                                                <i class="tm-indicator-status fas fa-check-double"></i>
+                                                                            </div>
+                                                                            <div class="tm-status-text uk-text-danger">
+                                                                                Сообщение не отправлено
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </article>
+                                                            </li>
+
+                                                            <li>
+                                                                <div class="uk-text-center uk-text-muted">Сообщение
+                                                                    удалено
                                                                 </div>
-                                                                <div class="uk-text-right uk-text-danger">Сообщение не отправлено</div>
-                                                            </article>
-                                                        </li>
-
-                                                        <li>
-                                                            <div class="uk-text-center uk-text-muted">Сообщение удалено</div>
-                                                        </li>
+                                                            </li>
 
 
-                                                    </ul>
-                                                </div>
-
-                                                <div class="uk-padding-small uk-background-muted uk-text-muted">
-                                                    <div class="uk-child-width-auto uk-flex-middle" uk-grid>
-                                                        <div>
-                                                            <i class="fas fa-paperclip"></i>
-                                                        </div>
-                                                        <div class="uk-width-expand">
-                                                            <input class="uk-input" type="text" placeholder="Строчка начала сообщения..">
-                                                        </div>
-                                                        <div>
-                                                            <buttom class="uk-button uk-button-default">
-                                                                <i class="fas fa-paper-plane"></i>
-                                                            </buttom>
-                                                        </div>
+                                                        </ul>
                                                     </div>
 
-                                                </div>
-
-                                                <div id="tm-comment-edit" class="tm-comment-edit" hidden>
-                                                    <div class="uk-flex uk-flex-between uk-flex-middle">
-                                                        <div class="uk-flex uk-flex-middle">
-                                                            <div>2 сообщения</div>
-                                                            <a href="" class=""><i class="fas fa-times uk-margin-small-left"></i></a>
+                                                    <div class="uk-padding-small uk-background-muted uk-text-muted">
+                                                        <div class="uk-child-width-auto uk-flex-middle" uk-grid>
+                                                            <div>
+                                                                <i class="fas fa-paperclip"></i>
+                                                            </div>
+                                                            <div class="uk-width-expand">
+                                                                <input class="uk-input" type="text"
+                                                                       placeholder="Строчка начала сообщения..">
+                                                            </div>
+                                                            <div>
+                                                                <buttom class="uk-button uk-button-default">
+                                                                    <i class="fas fa-paper-plane"></i>
+                                                                </buttom>
+                                                            </div>
                                                         </div>
 
-                                                        <div>
-                                                            <ul class="uk-iconnav">
-                                                                <li>
-                                                                    <a href="#" uk-tooltip="title: Переслать; pos: bottom"><i class="far fa-file"></i></a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" uk-tooltip="title: Копировать; pos: bottom"><i class="fas fa-share"></i></a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" uk-tooltip="title: Поделиться; pos: bottom"><i class="fas fa-share-alt"></i></a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#" uk-tooltip="title: Удалить; pos: bottom" ><i class="fas fa-trash-alt"></i></a>
-                                                                </li>
-                                                            </ul>
+                                                    </div>
+
+                                                    <div id="tm-comment-edit-2" class="tm-comment-edit" hidden>
+                                                        <div class="uk-flex uk-flex-between uk-flex-middle">
+                                                            <div class="uk-flex uk-flex-middle">
+                                                                <div>2 сообщения</div>
+                                                                <a href="" class=""><i
+                                                                        class="fas fa-times uk-margin-small-left"></i></a>
+                                                            </div>
+
+                                                            <div>
+                                                                <ul class="uk-iconnav">
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           uk-tooltip="title: Переслать; pos: bottom"><i
+                                                                                class="far fa-file"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           uk-tooltip="title: Копировать; pos: bottom"><i
+                                                                                class="fas fa-share"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           uk-tooltip="title: Поделиться; pos: bottom"><i
+                                                                                class="fas fa-share-alt"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"
+                                                                           uk-tooltip="title: Удалить; pos: bottom"><i
+                                                                                class="fas fa-trash-alt"></i></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
+                                                </li>
+                                            </ul>
                                         </div>
 
                                     </div>
