@@ -12112,6 +12112,9 @@ iframe.uk-cover {
   filter: none;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
+.tm-visited {
+  filter: none;
+}
 .js__et-table .tm-tender-selected {
   display: none;
 }
