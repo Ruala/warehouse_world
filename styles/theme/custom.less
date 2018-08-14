@@ -559,6 +559,11 @@
   min-width: 300px;
 }
 
+.tm-dialog-wrap{
+  border: 1px solid #bfbfbf;
+  border-radius: 10px;
+}
+
 .tm-dialog-list, .tm-chat-field {
   overflow-y: auto;
   box-sizing: border-box;
@@ -566,10 +571,33 @@
 
 .tm-dialog-list {
   max-height: 680px;
-  padding: 10px 0;
+  font-size: 14px;
+
+  i {
+    font-size: 20px;
+
+    &.fa-ellipsis-h {
+      margin-top: -7px;
+      display: block;
+    }
+  }
 
   li {
-    padding: 10px 0;
+    position: relative;
+    padding: 10px;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 15px;
+      background-color: #fff;
+      border: 1px solid #bfbfbf;
+    }
 
     + li {
       border-top: 1px solid #e0e0e0;
@@ -583,10 +611,20 @@
   > li:nth-child(n+2) {
     margin-top: 0;
   }
+
+  .uk-text-small {
+    font-size: 12px;
+  }
 }
 
 .tm-chat-field {
   max-height: 830px;
+}
+
+.tm-new-messages {
+  line-height: 25px;
+  padding: 0 8px;
+  border-radius: 3px;
 }
 
 //Warning! Select2 section!!!
@@ -653,6 +691,28 @@
 }
 
 //End of Select2 section!
+
+// Custom Scrollbars
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #e4e4e4;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 @media (max-width: 639px) {
 

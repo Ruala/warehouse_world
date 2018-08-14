@@ -42,8 +42,8 @@
                                         <button class="uk-modal-close-default" type="button" uk-close></button>
 
                                         <div class="uk-child-width-expand uk-flex uk-flex-stretch">
-                                            <div class="tm-box-shadow uk-width-medium uk-border-rounded">
-                                                <div class="uk-padding-small">
+                                            <div class="tm-dialog-wrap tm-box-shadow uk-width-medium">
+                                                <div class="uk-padding-small uk-position-relative">
                                                     <div class="uk-child-width-expand uk-grid-small uk-flex-middle"
                                                          uk-grid>
                                                         <div class="uk-width-auto">
@@ -54,7 +54,7 @@
                                                         <div>
                                                             <div>
                                                                 <a href="#"
-                                                                   class="uk-link-reset uk-text-bold tm-text-medium uk-text-muted uk-flex uk-flex-middle">
+                                                                   class="uk-link-reset uk-text-bold tm-text-small uk-text-muted uk-flex uk-flex-middle">
                                                                     <i class="fas fa-plus uk-margin-small-right"></i>
                                                                     <span>Создать тег</span>
                                                                 </a>
@@ -69,6 +69,11 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <div class="uk-position-small uk-position-top-right">
+                                                        <a href="" class="uk-text-muted">
+                                                            <i class="tm-hover-light fas fa-cog"></i>
+                                                        </a>
+                                                    </div>
                                                 </div>
                                                 <hr class="uk-margin-remove">
                                                 <div class="uk-flex uk-flex-center uk-padding-small">
@@ -78,8 +83,8 @@
                                                     </button>
                                                 </div>
                                                 <hr class="uk-margin-remove">
-                                                <div class="uk-padding-small">
-                                                    <form class="uk-search uk-search-default">
+                                                <div>
+                                                    <form class="uk-search uk-search-default uk-padding-small uk-padding-remove-vertical">
                                                         <span uk-search-icon></span>
                                                         <input class="uk-search-input" type="search"
                                                                placeholder="Поиск...">
@@ -98,11 +103,11 @@
                                                                                      alt="" class="tm-border-dribble">
                                                                                 <div class="tm-dot uk-border-circle"></div>
                                                                             </div>
-                                                                            <div>вчера</div>
+                                                                            <div class="uk-text-small">вчера</div>
                                                                         </div>
 
                                                                         <div>
-                                                                            <h5 class="tm-text-medium uk-margin-remove">
+                                                                            <h5 class="uk-margin-remove">
                                                                                 Склад 107</h5>
                                                                             <div class="uk-text-muted">группа 5
                                                                                 участников
@@ -136,7 +141,7 @@
                                                                 </div>
                                                             </div>
                                                         </li>
-                                                        <li>
+                                                        <li class="uk-active">
                                                             <div class="uk-child-width-expand" uk-grid>
                                                                 <div>
                                                                     <div class="uk-child-width-expand uk-grid-small uk-flex-middle"
@@ -150,7 +155,7 @@
                                                                         </div>
 
                                                                         <div>
-                                                                            <h5 class="tm-text-medium uk-margin-remove">
+                                                                            <h5 class="uk-margin-remove">
                                                                                 Катя Иванова</h5>
                                                                             <div class="uk-text-muted">юр. лицо</div>
                                                                             <div class="uk-margin-small-top uk-flex-middle uk-grid-small"
@@ -175,7 +180,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="uk-flex uk-flex-right uk-margin-small-top">
-                                                                        <div class="uk-padding-small uk-border-rounded uk-light tm-muted-background">
+                                                                        <div class="tm-new-messages uk-light tm-muted-background">
                                                                             1
                                                                         </div>
                                                                     </div>
@@ -194,11 +199,11 @@
                                                                                      alt="" class="tm-border-dribble">
                                                                                 <div class="tm-dot uk-border-circle"></div>
                                                                             </div>
-                                                                            <div>вчера</div>
+                                                                            <div class="uk-text-small">вчера</div>
                                                                         </div>
 
                                                                         <div>
-                                                                            <h5 class="tm-text-medium uk-margin-remove">
+                                                                            <h5 class="uk-margin-remove">
                                                                                 Склад 107</h5>
                                                                             <div class="uk-text-muted">группа 5
                                                                                 участников
@@ -246,7 +251,7 @@
                                                                         </div>
 
                                                                         <div>
-                                                                            <h5 class="tm-text-medium uk-margin-remove">
+                                                                            <h5 class="uk-margin-remove">
                                                                                 Катя Иванова</h5>
                                                                             <div class="uk-text-muted">юр. лицо</div>
                                                                             <div class="uk-margin-small-top uk-flex-middle uk-grid-small"
@@ -271,7 +276,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="uk-flex uk-flex-right uk-margin-small-top">
-                                                                        <div class="uk-padding-small uk-border-rounded uk-light tm-muted-background">
+                                                                        <div class="tm-new-messages uk-light tm-muted-background">
                                                                             1
                                                                         </div>
                                                                     </div>
@@ -286,7 +291,7 @@
                                                 class="uk-switcher uk-child-width-1-1 uk-flex uk-flex-stretch">
                                                 <li class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between uk-position-relative">
                                                     <div class="tm-chat-field uk-padding-small">
-                                                        <div class="uk-flex-between" uk-grid>
+                                                        <div class="uk-flex-between uk-grid-collapse" uk-grid>
                                                             <div>
                                                                 <div class="uk-flex uk-flex-middle uk-text-primary">
                                                                     <i class="fas fa-pencil-alt uk-margin-small-right"></i>
@@ -592,7 +597,7 @@
 
                                                 <li class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between uk-position-relative">
                                                     <div class="uk-padding-small">
-                                                        <div class="uk-flex-between" uk-grid>
+                                                        <div class="uk-flex-between uk-grid-collapse" uk-grid>
                                                             <div>
                                                                 <div class="uk-flex uk-flex-middle uk-text-primary">
                                                                     <i class="fas fa-pencil-alt uk-margin-small-right"></i>
@@ -864,7 +869,7 @@
 
                                                 <li class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between uk-position-relative">
                                                     <div class="tm-chat-field uk-padding-small">
-                                                        <div class="uk-flex-between" uk-grid>
+                                                        <div class="uk-flex-between uk-grid-collapse" uk-grid>
                                                             <div>
                                                                 <div class="uk-flex uk-flex-middle uk-text-primary">
                                                                     <i class="fas fa-pencil-alt uk-margin-small-right"></i>
@@ -1170,7 +1175,7 @@
 
                                                 <li class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between uk-position-relative">
                                                     <div class="uk-padding-small">
-                                                        <div class="uk-flex-between" uk-grid>
+                                                        <div class="uk-flex-between uk-grid-collapse" uk-grid>
                                                             <div>
                                                                 <div class="uk-flex uk-flex-middle uk-text-primary">
                                                                     <i class="fas fa-pencil-alt uk-margin-small-right"></i>
