@@ -46,20 +46,20 @@ $(document).ready(function () {
         }
     })();
 
-    /*element togglers*/
+    /*element togglers premade*/
     (function () {
         /*toggler simple*/
         (function() {
-            var $toggler = $('.js__et');
-            var options = {};
+            const $toggler = $('.js__et');
+            const options = {};
 
             $toggler.jElementToggler(options);
         })();
 
         /*toggler no animate*/
         (function() {
-            var $toggler = $('.js__et-na');
-            var options = {
+            const $toggler = $('.js__et-na');
+            const options = {
                 animation: 'none'
             };
 
@@ -68,8 +68,8 @@ $(document).ready(function () {
 
         /*toggler fade*/
         (function() {
-            var $toggler = $('.js__et-fa');
-            var options = {
+            const $toggler = $('.js__et-fa');
+            const options = {
                 animation: 'fade'
             };
 
@@ -78,8 +78,8 @@ $(document).ready(function () {
 
         /*toggler slide*/
         (function() {
-            var $toggler = $('.js__et-sla');
-            var options = {
+            const $toggler = $('.js__et-sla');
+            const options = {
                 animation: 'slide'
             };
 
@@ -88,8 +88,8 @@ $(document).ready(function () {
 
         /*toggler simple parent lvl 1*/
         (function() {
-            var $toggler = $('.js__et-p1');
-            var options = {
+            const $toggler = $('.js__et-p1');
+            const options = {
                 getTarget: function ($btn) {
                     return $btn.parent().find($btn.attr('data-et-target') || $btn.attr('href'));
                 }
@@ -100,8 +100,8 @@ $(document).ready(function () {
 
         /*toggler no animate  parent lvl 1*/
         (function() {
-            var $toggler = $('.js__et-na-p1');
-            var options = {
+            const $toggler = $('.js__et-na-p1');
+            const options = {
                 getTarget: function ($btn) {
                     return $btn.parent().find($btn.attr('data-et-target') || $btn.attr('href'));
                 },
@@ -113,8 +113,8 @@ $(document).ready(function () {
 
         /*toggler fade  parent lvl 1*/
         (function() {
-            var $toggler = $('.js__et-fa-p1');
-            var options = {
+            const $toggler = $('.js__et-fa-p1');
+            const options = {
                 getTarget: function ($btn) {
                     return $btn.parent().find($btn.attr('data-et-target') || $btn.attr('href'));
                 },
@@ -126,8 +126,8 @@ $(document).ready(function () {
 
         /*toggler slide  parent lvl 1*/
         (function() {
-            var $toggler = $('.js__et-sla-p1');
-            var options = {
+            const $toggler = $('.js__et-sla-p1');
+            const options = {
                 getTarget: function ($btn) {
                     return $btn.parent().find($btn.attr('data-et-target') || $btn.attr('href'));
                 },
@@ -152,6 +152,60 @@ $(document).ready(function () {
 
             $rows.jElementToggler(options);
         });
+    })();
+
+    /*chat togglers*/
+    (function () {
+
+    })();
+    
+    /*chat arrow(carret)*/
+    (function () {
+        const $chatList = $('.tm-dialog-list');
+        const $modal = $('#modal-messages');
+        const $chat = $('#tm-chat-switcher');
+        const setCarret = setCarretTop.bind(null, $chatList);
+
+        setCarret();
+        $chat.on('show', setCarret);
+        $modal.on('show', setCarret);
+
+        function setCarretTop($list) {
+            const $activeLi = $list.find('> li.uk-active');
+            const $carret = $activeLi.find(".tm-caret");
+            setSameMiddle($activeLi[0], $carret[0]);
+        }
+
+        function setSameMiddle(base, caret) {
+            const baseMiddle = getMiddle(base);
+            const caretMiddle = getMiddle(caret);
+            const newTop = parseFloat(getComputedStyle(caret).top) + (baseMiddle.y - caretMiddle.y);
+
+            caret.style.top = newTop + 'px';
+        }
+
+        function getMiddle(elem) {
+            const size = getCoords(elem);
+            const width = size.right - size.left;
+            const height = size.bottom - size.top;
+
+            return {
+                x: size.left + width/2,
+                y: size.top + height/2,
+            };
+        }
+
+        function getCoords(elem) {
+            const box = elem.getBoundingClientRect();
+
+            return {
+                top: box.top + pageYOffset,
+                bottom: box.bottom + pageXOffset,
+                left: box.left + pageXOffset,
+                right: box.right + pageXOffset,
+            };
+
+        }
     })();
 
     /*sort*/
