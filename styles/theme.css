@@ -12102,12 +12102,12 @@ iframe.uk-cover {
 .tm-subnav-nd > * > :first-child {
   text-decoration: none;
 }
-.tm-blur-control tbody tr {
+.tm-blur-control {
   position: relative;
   z-index: 1;
   filter: blur(2px);
 }
-.tm-blur-control tbody tr.et-active {
+tr.et-active {
   z-index: 2;
   filter: none;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
