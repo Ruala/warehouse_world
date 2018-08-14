@@ -169,6 +169,7 @@ $(document).ready(function () {
         setCarret();
         $chat.on('show', setCarret);
         $modal.on('show', setCarret);
+        $chatList.on('scroll', setCarret);
 
         function setCarretTop($list) {
             const $activeLi = $list.find('> li.uk-active');
