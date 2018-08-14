@@ -12325,6 +12325,26 @@ iframe.uk-cover {
   top: 20px;
   left: 0;
 }
+.tm-comment-footer {
+  padding: 15px 30px;
+}
+.tm-comment-footer i {
+  display: block;
+  line-height: inherit;
+  font-size: 30px;
+  color: #b0b6be;
+}
+.tm-comment-footer .uk-button {
+  padding: 0 15px;
+  line-height: 50px;
+  background-color: #fff;
+  text-transform: none;
+  box-shadow: 0 0 8px 0 rgba(21, 21, 21, 0.16);
+}
+.tm-comment-footer .uk-input {
+  height: 50px;
+  border-radius: 5px;
+}
 .tm-hover-light {
   color: #96a1ae;
 }
