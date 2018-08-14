@@ -11930,7 +11930,7 @@ iframe.uk-cover {
   color: #616e7d;
   border: solid 1px #75bc40;
   font-weight: bold;
-  height: 53px;
+  line-height: 50px;
   border-radius: 5px;
 }
 .tm-button-default:hover,
