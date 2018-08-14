@@ -158,23 +158,40 @@ $(document).ready(function () {
     (function () {
 
     })();
+
+    /*clean view after click*/
+    (function () {
+        const $bluredItems = $('.tm-blur-control');
+
+        $bluredItems.on('click', function () {
+            $(this).removeClass('tm-blur-control');
+        });
+    })();
     
     /*chat arrow(carret)*/
     (function () {
         const $chatList = $('.tm-dialog-list');
+
+        if (!$chatList.length) return;
+
         const $modal = $('#modal-messages');
         const $chat = $('#tm-chat-switcher');
         const setCarret = setCarretTop.bind(null, $chatList);
 
         setCarret();
-        $chat.on('show', setCarret);
-        $modal.on('show', setCarret);
+        $chat.on('beforeshow show', setCarret);
+        $modal.on('beforeshow show', setCarret);
         $chatList.on('scroll', setCarret);
 
         function setCarretTop($list) {
             const $activeLi = $list.find('> li.uk-active');
+            const $inactiveLi = $list.find('> li:not(.uk-active)');
+            const $inactiveCarets = $inactiveLi.find('.tm-caret');
             const $carret = $activeLi.find(".tm-caret");
+
+            $inactiveCarets.hide();
             setSameMiddle($activeLi[0], $carret[0]);
+            $carret.fadeIn(200);
         }
 
         function setSameMiddle(base, caret) {
