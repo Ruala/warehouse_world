@@ -167,7 +167,7 @@ $(document).ready(function () {
         //     $(this).removeClass('tm-blur-control');
         // });
     })();
-    
+
     /*chat arrow(carret)*/
     (function () {
         const $chatList = $('.tm-dialog-list');
