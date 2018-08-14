@@ -225,12 +225,14 @@
 }
 
 .tm-blur-control {
+  position: relative;
+  z-index: 1;
+  filter: blur(2px);
+}
+
+.tm-table-bordered {
 
   tbody tr {
-    position: relative;
-    z-index: 1;
-    filter: blur(2px);
-
     &.et-active {
       z-index: 2;
       filter: none;
