@@ -409,6 +409,11 @@
       background-color: #f5f9fc;
       padding: 20px 40px 20px 20px;
       border-radius: 5px;
+
+      &::before {
+        content: '';
+        display: block;
+      }
     }
 
     &:hover {
@@ -496,11 +501,25 @@
 }
 
 .tm-hover-light {
+  color: lighten(@global-muted-color, 20%);
+
   &:hover,&:focus {
     color: lighten(@global-muted-color, 20%);
   }
 }
 
+.tm-icon-large {
+  font-size: 22px;
+}
+.tm-modal-close {
+  color: lighten(@global-muted-color, 20%);
+  font-size: 26px;
+  top: 8px;
+
+  svg {
+    display: none;
+  }
+}
 .tm-table-bordered {
 
   th, td {
@@ -559,9 +578,23 @@
   min-width: 300px;
 }
 
-.tm-dialog-wrap{
+.tm-dialog-wrap {
+  position: relative;
   border: 1px solid #bfbfbf;
   border-radius: 10px;
+}
+
+.tm-caret {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: calc(100% - 7px);
+  transform: translateY(-50%) rotate(45deg);
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-top: 1px solid #bfbfbf;
+  border-right: 1px solid #bfbfbf;
 }
 
 .tm-dialog-list, .tm-chat-field {
@@ -583,21 +616,7 @@
   }
 
   li {
-    position: relative;
     padding: 10px;
-
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 100%;
-      transform: translateY(-50%);
-      width: 15px;
-      height: 15px;
-      background-color: #fff;
-      border: 1px solid #bfbfbf;
-    }
 
     + li {
       border-top: 1px solid #e0e0e0;
@@ -605,6 +624,10 @@
 
     &.uk-active {
       box-shadow: 0 0 15px rgba(0,0,0,0.3);
+
+      .tm-caret {
+        display: block;
+      }
     }
   }
 

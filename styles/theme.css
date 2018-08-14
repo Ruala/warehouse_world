@@ -12246,6 +12246,10 @@ iframe.uk-cover {
   padding: 20px 40px 20px 20px;
   border-radius: 5px;
 }
+.uk-comment .uk-comment-body > div::before {
+  content: '';
+  display: block;
+}
 .uk-comment .uk-comment-body:hover .tm-indicator-selected {
   opacity: 0.3;
   color: #6c94c9;
@@ -12299,9 +12303,23 @@ iframe.uk-cover {
   top: 20px;
   left: 0;
 }
+.tm-hover-light {
+  color: #96a1ae;
+}
 .tm-hover-light:hover,
 .tm-hover-light:focus {
   color: #96a1ae;
+}
+.tm-icon-large {
+  font-size: 22px;
+}
+.tm-modal-close {
+  color: #96a1ae;
+  font-size: 26px;
+  top: 8px;
+}
+.tm-modal-close svg {
+  display: none;
 }
 .tm-table-bordered th,
 .tm-table-bordered td {
@@ -12345,8 +12363,21 @@ iframe.uk-cover {
   min-width: 300px;
 }
 .tm-dialog-wrap {
+  position: relative;
   border: 1px solid #bfbfbf;
   border-radius: 10px;
+}
+.tm-caret {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: calc(100% - 7px);
+  transform: translateY(-50%) rotate(45deg);
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-top: 1px solid #bfbfbf;
+  border-right: 1px solid #bfbfbf;
 }
 .tm-dialog-list,
 .tm-chat-field {
@@ -12365,26 +12396,16 @@ iframe.uk-cover {
   display: block;
 }
 .tm-dialog-list li {
-  position: relative;
   padding: 10px;
-}
-.tm-dialog-list li::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  transform: translateY(-50%);
-  width: 15px;
-  height: 15px;
-  background-color: #fff;
-  border: 1px solid #bfbfbf;
 }
 .tm-dialog-list li + li {
   border-top: 1px solid #e0e0e0;
 }
 .tm-dialog-list li.uk-active {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.tm-dialog-list li.uk-active .tm-caret {
+  display: block;
 }
 .tm-dialog-list > li:nth-child(n+2) {
   margin-top: 0;
