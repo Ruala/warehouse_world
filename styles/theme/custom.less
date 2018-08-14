@@ -413,6 +413,13 @@
       &::before {
         content: '';
         display: block;
+        position: absolute;
+        top: 0;
+        left: -7px;
+        transform: skewX(50deg);
+        width: 20px;
+        height: 10px;
+        background-color: #f5f9fc;
       }
     }
 
@@ -465,15 +472,29 @@
 
       > div {
         border: solid 1px @global-danger-background;
+
+        &::before {
+          top: -1px;
+          border-top: solid 1px @global-danger-background;
+          border-left: solid 1px @global-danger-background;
+        }
       }
     }
 
     .tm-indicator-status {
       color: @global-danger-background;
     }
+
+    &.uk-comment-primary {
+
+      .uk-comment-body > div::before {
+        border-left: none;
+        border-right: solid 1px @global-danger-background;
+      }
+    }
   }
 
-   &.uk-comment-primary {
+  &.uk-comment-primary {
 
     .uk-comment-header {
       justify-content: flex-end;
@@ -488,6 +509,13 @@
 
       > div {
         background-color: #faf5f5;
+
+        &::before {
+          left: auto;
+          right: -7px;
+          transform: skewX(-50deg);
+          background-color: #faf5f5;
+        }
       }
     }
   }

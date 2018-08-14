@@ -12249,6 +12249,13 @@ iframe.uk-cover {
 .uk-comment .uk-comment-body > div::before {
   content: '';
   display: block;
+  position: absolute;
+  top: 0;
+  left: -7px;
+  transform: skewX(50deg);
+  width: 20px;
+  height: 10px;
+  background-color: #f5f9fc;
 }
 .uk-comment .uk-comment-body:hover .tm-indicator-selected {
   opacity: 0.3;
@@ -12282,8 +12289,17 @@ iframe.uk-cover {
 .uk-comment.tm-status-error .uk-comment-body > div {
   border: solid 1px #c64141;
 }
+.uk-comment.tm-status-error .uk-comment-body > div::before {
+  top: -1px;
+  border-top: solid 1px #c64141;
+  border-left: solid 1px #c64141;
+}
 .uk-comment.tm-status-error .tm-indicator-status {
   color: #c64141;
+}
+.uk-comment.tm-status-error.uk-comment-primary .uk-comment-body > div::before {
+  border-left: none;
+  border-right: solid 1px #c64141;
 }
 .uk-comment.uk-comment-primary .uk-comment-header {
   justify-content: flex-end;
@@ -12295,6 +12311,12 @@ iframe.uk-cover {
   text-align: left;
 }
 .uk-comment.uk-comment-primary .uk-comment-body > div {
+  background-color: #faf5f5;
+}
+.uk-comment.uk-comment-primary .uk-comment-body > div::before {
+  left: auto;
+  right: -7px;
+  transform: skewX(-50deg);
   background-color: #faf5f5;
 }
 .tm-comment-edit {
