@@ -413,9 +413,9 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div uk-toggle="target: #tm-comment-group">
+                                                            <a href="#tm-comment-group" class="tm-modal-close" uk-toggle>
                                                                 <i class="fas fa-times"></i>
-                                                            </div>
+                                                            </a>
                                                         </div>
                                                         <ul class="uk-comment-list">
                                                             <li>
@@ -488,14 +488,15 @@
                                                                          data-et-target="#tm-comment-edit">
                                                                         <i class="tm-indicator-selected fas fa-check-circle"></i>
                                                                         <div>
-                                                                            <a href="" class=""><img
-                                                                                    src="http://via.placeholder.com/110x75"
-                                                                                    alt=""></a>
-
-                                                                            <img src="http://via.placeholder.com/110x75"
-                                                                                 alt="">
-                                                                            <img src="http://via.placeholder.com/110x75"
-                                                                                 alt="">
+                                                                            <a href="#tm-message-gallery" class="tm-message-link-gallery uk-link-reset" uk-toggle>
+                                                                                <img src="http://via.placeholder.com/110x75" alt="">
+                                                                            </a>
+                                                                            <a href="#tm-message-gallery" class="tm-message-link-gallery uk-link-reset" uk-toggle>
+                                                                                <img src="http://via.placeholder.com/110x75" alt="">
+                                                                            </a>
+                                                                            <a href="#tm-message-gallery" class="tm-message-link-gallery uk-link-reset" uk-toggle>
+                                                                                <img src="http://via.placeholder.com/110x75" alt="">
+                                                                            </a>
                                                                         </div>
                                                                     </div>
                                                                     <div class="js__et-fa uk-comment-body"
@@ -599,6 +600,61 @@
                                                             </div>
                                                         </div>
                                                     </div>
+
+                                                    <div id="tm-message-gallery" class="tm-message-gallery" hidden>
+                                                            <div class="tm-message-gallery-nav uk-background-muted">
+                                                                <ul class="uk-margin-remove" uk-tab="connect: #tm-message-gallery-content; animation: uk-animation-fade">
+                                                                    <li class="uk-active"><a href="">Фотографии</a></li>
+                                                                    <li><a href="">Видеозаписи</a></li>
+                                                                    <li><a href="">Документы</a></li>
+                                                                </ul>
+                                                                <a href="#tm-message-gallery" class="tm-modal-close" uk-toggle>
+                                                                    <i class="fas fa-times"></i>
+                                                                </a>
+                                                            </div>
+
+                                                            <ul id="tm-message-gallery-content" class="tm-message-gallery-content uk-switcher">
+                                                                <li>
+                                                                    <div class="uk-child-width-auto" uk-grid>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="uk-child-width-auto" uk-grid>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="uk-child-width-auto" uk-grid>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                 </li>
 
                                                 <li class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between uk-position-relative">
@@ -758,14 +814,15 @@
                                                                          data-et-target="#ttm-comment-edit-2">
                                                                         <i class="tm-indicator-selected fas fa-check-circle"></i>
                                                                         <div>
-                                                                            <a href="" class=""><img
-                                                                                    src="http://via.placeholder.com/110x75"
-                                                                                    alt=""></a>
-
-                                                                            <img src="http://via.placeholder.com/110x75"
-                                                                                 alt="">
-                                                                            <img src="http://via.placeholder.com/110x75"
-                                                                                 alt="">
+                                                                            <a href="#tm-message-gallery-2" class="tm-message-link-gallery uk-link-reset" uk-toggle>
+                                                                                <img src="http://via.placeholder.com/110x75" alt="">
+                                                                            </a>
+                                                                            <a href="#tm-message-gallery-2" class="tm-message-link-gallery uk-link-reset" uk-toggle>
+                                                                                <img src="http://via.placeholder.com/110x75" alt="">
+                                                                            </a>
+                                                                            <a href="#tm-message-gallery-2" class="tm-message-link-gallery uk-link-reset" uk-toggle>
+                                                                                <img src="http://via.placeholder.com/110x75" alt="">
+                                                                            </a>
                                                                         </div>
                                                                     </div>
                                                                     <div class="js__et-fa uk-comment-body"
@@ -871,6 +928,61 @@
                                                             </div>
                                                         </div>
                                                     </div>
+
+                                                    <div id="tm-message-gallery-2" class="tm-message-gallery" hidden>
+                                                            <div class="tm-message-gallery-nav uk-background-muted">
+                                                                <ul class="uk-margin-remove" uk-tab="connect: #tm-message-gallery-content-2; animation: uk-animation-fade">
+                                                                    <li class="uk-active"><a href="">Фотографии</a></li>
+                                                                    <li><a href="">Видеозаписи</a></li>
+                                                                    <li><a href="">Документы</a></li>
+                                                                </ul>
+                                                                <a href="#tm-message-gallery-2" class="tm-modal-close" uk-toggle>
+                                                                    <i class="fas fa-times"></i>
+                                                                </a>
+                                                            </div>
+
+                                                            <ul id="tm-message-gallery-content-2" class="tm-message-gallery-content uk-switcher">
+                                                                <li>
+                                                                    <div class="uk-child-width-auto" uk-grid>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="uk-child-width-auto" uk-grid>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="uk-child-width-auto" uk-grid>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                 </li>
 
                                                 <li class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between uk-position-relative">
@@ -991,9 +1103,9 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div uk-toggle="target: #tm-comment-group-2">
+                                                            <a href="#tm-comment-group-2" class="tm-modal-close" uk-toggle>
                                                                 <i class="fas fa-times"></i>
-                                                            </div>
+                                                            </a>
                                                         </div>
                                                         <ul class="uk-comment-list">
                                                             <li>
@@ -1066,14 +1178,15 @@
                                                                          data-et-target="#tm-comment-edit">
                                                                         <i class="tm-indicator-selected fas fa-check-circle"></i>
                                                                         <div>
-                                                                            <a href="" class=""><img
-                                                                                    src="http://via.placeholder.com/110x75"
-                                                                                    alt=""></a>
-
-                                                                            <img src="http://via.placeholder.com/110x75"
-                                                                                 alt="">
-                                                                            <img src="http://via.placeholder.com/110x75"
-                                                                                 alt="">
+                                                                            <a href="#tm-message-gallery-3" class="tm-message-link-gallery uk-link-reset" uk-toggle>
+                                                                                <img src="http://via.placeholder.com/110x75" alt="">
+                                                                            </a>
+                                                                            <a href="#tm-message-gallery-3" class="tm-message-link-gallery uk-link-reset" uk-toggle>
+                                                                                <img src="http://via.placeholder.com/110x75" alt="">
+                                                                            </a>
+                                                                            <a href="#tm-message-gallery-3" class="tm-message-link-gallery uk-link-reset" uk-toggle>
+                                                                                <img src="http://via.placeholder.com/110x75" alt="">
+                                                                            </a>
                                                                         </div>
                                                                     </div>
                                                                     <div class="js__et-fa uk-comment-body"
@@ -1177,6 +1290,61 @@
                                                             </div>
                                                         </div>
                                                     </div>
+
+                                                    <div id="tm-message-gallery-3" class="tm-message-gallery" hidden>
+                                                            <div class="tm-message-gallery-nav uk-background-muted">
+                                                                <ul class="uk-margin-remove" uk-tab="connect: #tm-message-gallery-content-3; animation: uk-animation-fade">
+                                                                    <li class="uk-active"><a href="">Фотографии</a></li>
+                                                                    <li><a href="">Видеозаписи</a></li>
+                                                                    <li><a href="">Документы</a></li>
+                                                                </ul>
+                                                                <a href="#tm-message-gallery-3" class="tm-modal-close" uk-toggle>
+                                                                    <i class="fas fa-times"></i>
+                                                                </a>
+                                                            </div>
+
+                                                            <ul id="tm-message-gallery-content-3" class="tm-message-gallery-content uk-switcher">
+                                                                <li>
+                                                                    <div class="uk-child-width-auto" uk-grid>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="uk-child-width-auto" uk-grid>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="uk-child-width-auto" uk-grid>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                 </li>
 
                                                 <li class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between uk-position-relative">
@@ -1336,14 +1504,15 @@
                                                                          data-et-target="#ttm-comment-edit-4">
                                                                         <i class="tm-indicator-selected fas fa-check-circle"></i>
                                                                         <div>
-                                                                            <a href="" class=""><img
-                                                                                    src="http://via.placeholder.com/110x75"
-                                                                                    alt=""></a>
-
-                                                                            <img src="http://via.placeholder.com/110x75"
-                                                                                 alt="">
-                                                                            <img src="http://via.placeholder.com/110x75"
-                                                                                 alt="">
+                                                                            <a href="#tm-message-gallery-4" class="tm-message-link-gallery uk-link-reset" uk-toggle>
+                                                                                <img src="http://via.placeholder.com/110x75" alt="">
+                                                                            </a>
+                                                                            <a href="#tm-message-gallery-4" class="tm-message-link-gallery uk-link-reset" uk-toggle>
+                                                                                <img src="http://via.placeholder.com/110x75" alt="">
+                                                                            </a>
+                                                                            <a href="#tm-message-gallery-4" class="tm-message-link-gallery uk-link-reset" uk-toggle>
+                                                                                <img src="http://via.placeholder.com/110x75" alt="">
+                                                                            </a>
                                                                         </div>
                                                                     </div>
                                                                     <div class="js__et-fa uk-comment-body"
@@ -1449,6 +1618,61 @@
                                                             </div>
                                                         </div>
                                                     </div>
+
+                                                    <div id="tm-message-gallery-4" class="tm-message-gallery" hidden>
+                                                            <div class="tm-message-gallery-nav uk-background-muted">
+                                                                <ul class="uk-margin-remove" uk-tab="connect: #tm-message-gallery-content-4; animation: uk-animation-fade">
+                                                                    <li class="uk-active"><a href="">Фотографии</a></li>
+                                                                    <li><a href="">Видеозаписи</a></li>
+                                                                    <li><a href="">Документы</a></li>
+                                                                </ul>
+                                                                <a href="#tm-message-gallery-4" class="tm-modal-close" uk-toggle>
+                                                                    <i class="fas fa-times"></i>
+                                                                </a>
+                                                            </div>
+
+                                                            <ul id="tm-message-gallery-content-4" class="tm-message-gallery-content uk-switcher">
+                                                                <li>
+                                                                    <div class="uk-child-width-auto" uk-grid>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="uk-child-width-auto" uk-grid>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="uk-child-width-auto" uk-grid>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <img src="http://via.placeholder.com/110x75" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                 </li>
                                             </ul>
                                         </div>
