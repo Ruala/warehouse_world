@@ -853,11 +853,11 @@ a.uk-link-reset:hover,
   /* 2 */
   width: 100%;
   /* 3 */
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 /* Add margin if adjacent element */
 * + .uk-table {
-  margin-top: 20px;
+  margin-top: 0;
 }
 /* Header cell
  ========================================================================== */
@@ -5716,6 +5716,7 @@ ul.uk-nav-sub {
 }
 .uk-iconnav > * > a.tm-nav-big {
   height: 37px;
+  width: auto;
   min-width: 37px;
 }
 /* Hover + Focus */
@@ -11992,10 +11993,11 @@ iframe.uk-cover {
   background: none;
 }
 .tm-toggle-notice {
-  position: absolute;
-  bottom: 0;
-  right: 5px;
+  float: right;
+  display: inline-block;
   padding: 5px;
+  margin-top: -35px;
+  margin-right: 5px;
 }
 .tm-toggle-notice::after {
   position: static;
@@ -12018,6 +12020,23 @@ iframe.uk-cover {
 .tm-iconnav-secondary > * > a {
   background: #ff8a48;
   color: #ffffff;
+}
+.tm-iconnav-right li {
+  position: relative;
+  min-width: 37px;
+  height: 37px;
+}
+.tm-iconnav-right > * > a {
+  position: absolute;
+  right: 0;
+}
+.tm-iconnav-right .tm-button-hover .tm-button-toggle {
+  position: relative;
+  left: -30px;
+}
+.tm-iconnav-right .tm-button-hover:hover .tm-button-toggle,
+.tm-iconnav-right .tm-button-hover:focus .tm-button-toggle {
+  margin-right: -30px;
 }
 .tm-background-feedbacks {
   background: #e95800;
@@ -12099,6 +12118,9 @@ iframe.uk-cover {
 }
 .js__et-table .et-active .tm-tender-unselected {
   display: none;
+}
+.tm-thead-center th {
+  text-align: center;
 }
 .tm-box-shadow {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
