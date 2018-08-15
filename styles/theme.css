@@ -12411,6 +12411,20 @@ tr.et-active {
 .tm-message-gallery-content img {
   border-radius: 5px;
 }
+.tm-modal-message {
+  max-height: 920px;
+  overflow-y: auto;
+}
+.tm-modal-message h4 {
+  text-decoration: underline;
+}
+.tm-modal-message .uk-comment-list {
+  max-height: 700px;
+  overflow-y: auto;
+}
+.tm-modal-message .uk-comment-list h4 {
+  text-decoration: none;
+}
 .tm-hover-light {
   color: #96a1ae;
 }
@@ -12493,7 +12507,7 @@ tr.et-active {
   box-sizing: border-box;
 }
 .tm-dialog-list {
-  max-height: 680px;
+  max-height: 720px;
   font-size: 14px;
 }
 .tm-dialog-list i {
